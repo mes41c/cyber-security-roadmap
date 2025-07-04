@@ -204,74 +204,701 @@
                     </div>
 
 <div id="content-skills" class="tab-content">
-                <h3 class="text-2xl font-semibold text-slate-800 mb-2">Uzmanlık Alanını ve Zihniyeti Seç</h3>
-                <p class="text-slate-600 mb-6">Siber güvenlik dünyası, savunma (Mavi Takım) ve saldırı (Kırmızı Takım) disiplinlerinin uzmanliğini gerektirir. Ancak modern yaklaşım, bu iki gücün iş birliği yaptığı Mor Takım felsefesiyle zirveye ulaşır. Yetkinlikleri keşfetmeye başlayın.</p>
+            <h3 class="text-2xl font-semibold text-slate-800 mb-2">Uzmanlık Alanını ve Zihniyeti Seç</h3>
+            <p class="text-slate-600 mb-6">Siber güvenlik dünyası, savunma (Mavi Takım) ve saldırı (Kırmızı Takım) disiplinlerinin uzmanlığını gerektirir. Ancak modern yaklaşım, bu iki gücün iş birliği yaptığı Mor Takım felsefesiyle zirveye ulaşır. Yetkinlikleri keşfetmeye başlayın.</p>
+            
+            <div class="flex items-center justify-center mb-10">
+                <span class="mr-3 font-medium text-blue-600">Savunmacı</span>
+                <label for="skillToggle" class="flex items-center cursor-pointer">
+                    <div class="relative">
+                        <input type="checkbox" id="skillToggle" class="sr-only">
+                        <div class="block bg-slate-300 w-14 h-8 rounded-full"></div>
+                        <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                    </div>
+                </label>
+                 <span class="ml-3 font-medium text-red-600">Saldırgan</span>
+            </div>
+
+            <div id="defensive-skills">
+                <h4 class="text-2xl font-bold text-blue-700 mb-6 text-center">Savunmacı Zihniyet (Mavi Takım)</h4>
                 
-                <div class="flex items-center justify-center mb-10">
-                    <span class="mr-3 font-medium text-blue-600">Savunmacı</span>
-                    <label for="skillToggle" class="flex items-center cursor-pointer">
-                        <div class="relative">
-                            <input type="checkbox" id="skillToggle" class="sr-only">
-                            <div class="block bg-slate-300 w-14 h-8 rounded-full"></div>
-                            <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+                <div class="mb-8">
+                    <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-blue-200 pb-2 mb-4">📘 Temel Seviye (Foundation)</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <div class="flip-card" id="skill-blue-temel-1">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-50 border-blue-200">
+                                    <strong>Siber Güvenlik Temelleri:</strong> CIA Üçlüsü, temel saldırı türleri (Phishing, Malware, DoS) ve savunma konseptlerini anlama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> CIA Üçlüsü, Tehdit/Zafiyet/Risk, AAA, Yaygın Saldırı Vektörleri.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> <a href="https://aws.amazon.com/tr/what-is/cybersecurity/" target="_blank" class="text-sky-600 hover:underline">AWS</a> & <a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html" target="_blank" class="text-sky-600 hover:underline">Cisco</a> tanımları, CompTIA Sec+ notları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir e-ticaret sitesi senaryosu için potansiyel tehditleri ve bunların CIA'in hangi unsurunu ihlal edeceğini listeleyin.</p>
+                                </div>
+                            </div>
                         </div>
-                    </label>
-                     <span class="ml-3 font-medium text-red-600">Saldırgan</span>
+                        <div class="flip-card" id="skill-blue-temel-2">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-50 border-blue-200">
+                                    <strong>Network Bilgisi:</strong> OSI ve TCP/IP modellerini, temel protokolleri (HTTP, DNS, SMTP) ve portların görevlerini bilme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> OSI vs TCP/IP, Subnetting, Yaygın Portlar (80, 443, 22, 25), DNS Çözümleme.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> GeeksforGeeks "Computer Network Tutorial", "Network Başlangıç Temelleri" GitHub dokümanı.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Komut satırında `ping google.com` ve `tracert google.com` komutlarını çalıştırıp çıktılarını yorumlamaya çalışın.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-temel-3">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-50 border-blue-200">
+                                    <strong>İşletim Sistemi Bilgisi:</strong> Windows ve Linux'ta temel komut satırı kullanımı, izinler ve dosya sistemi hakkında bilgi sahibi olma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Linux (ls, cd, cat, grep, chmod), Windows (ipconfig, netstat), Dosya İzinleri (RWX).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> TryHackMe "Linux Fundamentals" modülü, "OverTheWire: Bandit" CTF'i.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir Linux sanal makinede yeni bir kullanıcı oluşturun ve bu kullanıcının sadece kendi ev dizinine yazma izni olduğundan emin olun.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-temel-4">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-50 border-blue-200">
+                                    <strong>Güvenlik Araçları Farkındalığı:</strong> Antivirüs, Firewall ve SIEM gibi araçların ne işe yaradığını kavramsal olarak bilme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> İmza Tabanlı vs Davranışsal Analiz, Ağ Güvenlik Duvarı vs WAF, Log Korelasyonu.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "SIEM nedir?", "Firewall nedir?" gibi temel konularda hazırlanmış YouTube videoları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Windows Defender Güvenlik Duvarı'nda belirli bir programın internete çıkışını engelleyen bir kural yazın.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-temel-5">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-50 border-blue-200">
+                                    <strong>Bulut Bilişim Temelleri:</strong> IaaS, PaaS, SaaS modellerini ve temel bulut güvenlik sorumluluklarını (Paylaşılan Sorumluluk Modeli) anlama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Sanallaştırma vs Bulut, Paylaşılan Sorumluluk Modeli, Temel Servisler (EC2, S3).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> AWS'in "Cloud Practitioner Essentials" ücretsiz dijital eğitimi.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> AWS Free Tier (ücretsiz katman) hesabı oluşturun ve bir sanal makine (EC2 instance) ayağa kaldırıp ona bağlanmayı deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-temel-6">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-50 border-blue-200">
+                                    <strong>Kimlik Yönetimi Kavramları:</strong> Kimlik doğrulama (Authentication) ve yetkilendirmenin (Authorization) ne anlama geldiğini bilme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Authentication vs Authorization, Çok Faktörlü Kimlik Doğrulama (MFA), En Az Yetki Prensibi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Okta ve Auth0 gibi kimlik yönetimi firmalarının bloglarındaki temel makaleler.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Kullandığınız bir sosyal medya hesabında Çok Faktörlü Kimlik Doğrulama (MFA) özelliğini aktif hale getirin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="defensive-skills">
-                    <h4 class="text-2xl font-bold text-blue-700 mb-6 text-center">Savunmacı Zihniyet (Mavi Takım)</h4>
-                    <div class="mb-8">
-                        <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-blue-200 pb-2 mb-4">📘 Temel Seviye (Foundation)</h5>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="container-blue-temel">
+                <div class="mb-8">
+                    <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-blue-200 pb-2 mb-4">🛠️ Orta Seviye (Practitioner)</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        
+                        <div class="flip-card" id="skill-blue-orta-1">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
                             </div>
-                    </div>
-                    <div class="mb-8">
-                        <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-blue-200 pb-2 mb-4">🛠️ Orta Seviye (Practitioner)</h5>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="container-blue-orta">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-100 border-blue-300">
+                                    <strong>SOC Operasyonları (Tier 1/2):</strong> Güvenlik operasyon merkezinde alarm analizi (triage) yapma ve olay müdahale (IR) prosedürlerini takip etme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Olay Sınıflandırma (Triage), Olay Müdahale Yaşam Döngüsü (PICERL), Kanıt Toplama, Raporlama.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "SIEM" ve "Incident Response" konulu YouTube videoları, SOC analisti mülakat soruları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> LetsDefend.io gibi platformlarda yayınlanmış SOC alarm senaryolarını çözmeye çalışın.</p>
+                                </div>
                             </div>
-                    </div>
-                    <div>
-                        <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-blue-200 pb-2 mb-4">🚀 Uzman Seviye (Expert)</h5>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="container-blue-uzman">
+                        </div>
+                        
+                        <div class="flip-card" id="skill-blue-orta-2">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
                             </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-100 border-blue-300">
+                                    <strong>SIEM & Log Yönetimi:</strong> Splunk, QRadar gibi SIEM'lerde log kaynaklarını analiz etme ve temel korelasyon kuralları yazma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Log Toplama ve Normalizasyon, Korelasyon Kuralları Mantığı, Dashboard Oluşturma.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Splunk'ın ücretsiz "Fundamentals" eğitimi, ELK Stack (Elastic) dokümantasyonu.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Kendi ev ağınızdaki modem ve bilgisayar loglarını bir SIEM'e (örn: Wazuh) aktarıp analiz etmeyi deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-orta-3">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-100 border-blue-300">
+                                    <strong>Ağ Trafiği Analizi:</strong> Wireshark ile ağ paketlerini analiz ederek anomali ve şüpheli aktiviteleri tespit etme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> TCP/UDP başlıkları, DNS ve HTTP sorguları, TLS El Sıkışması (Handshake), Filtreleme.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Network Başlangıç Temelleri" dokümanı, GeeksforGeeks Network Tutorial.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Wireshark'ın "Sample Captures" sayfasından örnek bir .pcap dosyası indirip içindeki HTTP trafiğini inceleyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-orta-4">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-100 border-blue-300">
+                                    <strong>Zafiyet Yönetimi:</strong> Nessus, OpenVAS gibi araçlarla zafiyet taramaları yapma ve raporları yorumlayarak önceliklendirme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> CVSS Skorlama Sistemi, Zafiyet Yaşam Döngüsü, Rapor Yorumlama, False Positive/Negative.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> OWASP Top 10 listesi, Nessus Essentials (ücretsiz sürüm) dokümantasyonu.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Kendi ev laboratuvarınızdaki zafiyetli bir makineye (örn: Metasploitable) Nessus ile tarama yapın ve sonuçları analiz edin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-orta-5">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-100 border-blue-300">
+                                    <strong>Uç Nokta Güvenliği (EDR):</strong> EDR alarmlarını inceleme, tehditleri karantinaya alma ve temel endpoint adli bilişim analizi yapma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Süreç (Process) takibi, MITRE ATT&CK Framework'ü ile eşleştirme, İndikatörler (IOC/IOA).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "EDR Nedir?" konulu teknik blog yazıları, CrowdStrike ve SentinelOne gibi üreticilerin ürün sayfaları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir EDR platformunun deneme sürümünü (trial) indirip, bilinen zararsız bir aracı (örn: Sysinternals) çalıştırarak nasıl loglar ürettiğini gözlemleyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-orta-6">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-100 border-blue-300">
+                                    <strong>Tehdit İstihbaratı (CTI):</strong> Açık kaynaklı (OSINT) ve ticari tehdit istihbaratı verilerini kullanarak savunma mekanizmalarını güçlendirme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Stratejik/Taktik/Operasyonel İstihbarat, Tehdit Aktörleri, IOC'ler, TTP'ler.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Secops.com ve KPMG'nin siber istihbarat makaleleri, Mandiant ve CrowdStrike blogları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> VirusTotal veya AlienVault OTX gibi platformlarda, güncel bir zararlı yazılım kampanyasına ait IP adresi veya domain'leri (IOC) araştırın.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div id="offensive-skills" class="hidden">
-                    <h4 class="text-2xl font-bold text-red-700 mb-6 text-center">Saldırgan Zihniyet (Kırmızı Takım)</h4>
-                    <div class="mb-8">
-                        <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-red-200 pb-2 mb-4">📘 Temel Seviye (Foundation)</h5>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="container-red-temel">
+                <div>
+                    <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-blue-200 pb-2 mb-4">🚀 Uzman Seviye (Expert)</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <div class="flip-card" id="skill-blue-uzman-1">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
                             </div>
-                    </div>
-                    <div class="mb-8">
-                        <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-red-200 pb-2 mb-4">🛠️ Orta Seviye (Practitioner)</h5>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="container-red-orta">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-200 border-blue-400">
+                                    <strong>Proaktif Tehdit Avcılığı (Threat Hunting):</strong> "Sisteme sızıldı" varsayımıyla, hipotezlere dayalı olarak ağ ve sistemlerde gizli tehditleri proaktif olarak arama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Avcılık Döngüsü (Hypothesis, Investigation, Uncovering, Informing), Pyramid of Pain, MITRE ATT&CK TTP'leri.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> David J. Bianco'nun "Pyramid of Pain" blog yazısı, SANS'ın "Threat Hunting" posterleri.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> SIEM üzerinde, MITRE ATT&CK'den seçtiğiniz bir tekniğin (örn: "Scheduled Task") normal dışı kullanımını arayacak bir sorgu yazın.</p>
+                                </div>
                             </div>
-                    </div>
-                    <div>
-                        <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-red-200 pb-2 mb-4">🚀 Uzman Seviye (Expert)</h5>
-                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm" id="container-red-uzman">
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-uzman-2">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
                             </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-200 border-blue-400">
+                                    <strong>Dijital Adli Bilişim (DFIR):</strong> Kök neden analizi için derinlemesine disk, bellek (memory) ve bulut ortamı adli bilişim analizi yapma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Kanıt Toplama (Acquisition), Olay Zaman Çizelgesi (Timeline) oluşturma, Volatility ile bellek analizi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "The Art of Memory Forensics" kitabı, SANS FOR508 kurs içeriği özeti.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> "Memory Forensics" CTF'lerinden bir bellek imajı (.vmem) indirip Volatility ile içindeki aktif network bağlantılarını listeleyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-uzman-3">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-200 border-blue-400">
+                                    <strong>Zararlı Yazılım Analizi:</strong> Statik ve dinamik analiz yöntemleriyle, sandbox ortamlarında zararlı yazılımları tersine mühendislikle analiz etme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Statik Analiz (strings, PE headers), Dinamik Analiz (Sandbox), Temel Tersine Mühendislik (Disassembly).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Any.Run ve Hybrid Analysis gibi online sandbox'lar, "Practical Malware Analysis" kitabı.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> MalwareBazaar'dan bir örnek indirip (güvenli bir sanal makinede) Any.Run'a yükleyin ve oluşturduğu ağ trafiği ile dosya sistemi değişikliklerini raporlayın.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-uzman-4">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-200 border-blue-400">
+                                    <strong>Otomasyon (SOAR & Scripting):</strong> Python/PowerShell ile süreçleri otomatize etme, SOAR platformlarını etkin kullanma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> API Entegrasyonları, Playbook (Oyun Kitabı) oluşturma, Python `requests` kütüphanesi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Shuffle, TheHive/Cortex gibi açık kaynaklı SOAR platformları, "Automate the Boring Stuff with Python" kitabı.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> VirusTotal API'si için ücretsiz bir anahtar alıp, bir dosya hash'ini sorgulayan ve sonucunu yazdıran basit bir Python betiği yazın.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flip-card" id="skill-blue-uzman-5">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-200 border-blue-400">
+                                    <strong>Bulut Güvenlik Mimarisi:</strong> Güvenli bulut altyapıları tasarlama, CASB, CWPP gibi bulut-özel güvenlik çözümlerini yönetme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> CSPM, CWPP, "Infrastructure as Code" (IaC) Güvenliği (örn: Terrascan), Zero Trust Mimarisi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> AWS ve Azure'ın "Well-Architected Framework" güvenlik dokümanları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Basit bir AWS VPC (Sanal Özel Ağ) mimarisini, herkese açık ve özel alt ağlar (subnet) içerecek şekilde bir diyagram aracıyla çizin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-blue-uzman-6">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-blue-200 border-blue-400">
+                                    <strong>Yapay Zeka ve Güvenlik:</strong> Güvenlik operasyonlarında anomali tespiti ve tehdit öngörüsü için yapay zeka ve makine öğrenmesi modellerini kullanma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> User and Entity Behavior Analytics (UEBA), Anomali Tespiti Algoritmaları, Güvenlik için Veri Bilimi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Siber Güvenliğin Geleceği: Yapay Zeka ve Yeni Tehditler" ve "Siber Saldırıların Geleceği" makaleleri.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir SIEM veya EDR platformunun UEBA özelliğinin, şüpheli kullanıcı davranışlarını nasıl tespit ettiğini anlatan bir blog yazısı veya video izleyip özetleyin.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div id="purple-team-skills" class="mt-16 pt-10 border-t-4 border-dashed border-purple-300">
-                    <h4 class="text-3xl font-bold text-purple-700 mb-4 text-center">İş Birliği Zihniyeti (Mor Takım)</h4>
-                    <p class="text-center text-slate-600 max-w-3xl mx-auto mb-8">Mor Takım, Kırmızı ve Mavi Takımları bir araya getirerek savunma yeteneklerini sürekli test etme, ölçme ve iyileştirme felsefesidir. Amaç, varsayımları ortadan kaldırmak ve gerçek saldırılara karşı hazırlığı en üst düzeye çıkarmaktır.</p>
-                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-6">
-                        <h5 class="text-lg font-semibold text-purple-800 border-b-2 border-purple-200 pb-2 mb-4">🧩 Temel Aktiviteler ve Yetkinlikler</h5>
-                        <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 text-sm">
-                            <div><strong class="text-purple-900">Düşman Taklidi (Adversary Emulation):</strong> Gerçek APT gruplarının MITRE ATT&CK'de belgelenmiş TTP'lerini kullanarak kontrollü saldırılar gerçekleştirme.</div>
-                            <div><strong class="text-purple-900">Tespit Mühendisliği (Detection Engineering):</strong> Saldırı simülasyonları sırasında, mevcut güvenlik kontrollerinin (SIEM, EDR) saldırıyı ne kadar sürede ve ne kadar etkili tespit ettiğini ölçme ve yeni tespit kuralları yazma.</div>
-                            <div><strong class="text-purple-900">Kontrol Validasyonu (Control Validation):</strong> Güvenlik yatırımlarının (Firewall, WAF, vb.) beklendiği gibi çalışıp çalışmadığını, İhlal ve Saldırı Simülasyonu (BAS) platformları ile sürekli doğrulama.</div>
-                            <div><strong class="text-purple-900">Ortak Tatbikat Yönetimi:</strong> Kırmızı ve Mavi Takımları bir araya getiren, hedefe yönelik tatbikatlar planlama, yürütme ve sonuçlarını analiz ederek iyileştirme döngüsü başlatma.</div>
+            </div>
+            <div id="offensive-skills" class="hidden">
+                <h4 class="text-2xl font-bold text-red-700 mb-6 text-center">Saldırgan Zihniyet (Kırmızı Takım)</h4>
+
+                <div class="mb-8">
+                    <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-red-200 pb-2 mb-4">📘 Temel Seviye (Foundation)</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <div class="flip-card" id="skill-red-temel-1">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-50 border-red-200">
+                                    <strong>Sızma Testi Metodolojileri:</strong> PTES, OSSTMM, Cyber Kill Chain gibi standartları kavramsal olarak bilme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Keşif, Tarama, Erişim Kazanma, Yetki Yükseltme, İzleri Temizleme aşamaları.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Siber Güvenlik Dalları ve Sertifikaları" dokümanı, "PTES" resmi web sitesi.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Basit bir saldırı senaryosunu (örn: bir web sitesine sızma) Cyber Kill Chain adımlarına göre kağıt üzerinde haritalayın.</p>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="text-lg font-semibold text-purple-800 border-b-2 border-purple-200 pb-2 mt-6 mb-4">🔧 Kullanılan Araçlar ve Platformlar</h5>
-                         <div class="grid md:grid-cols-2 gap-x-6 gap-y-4 text-sm">
-                            <div><strong class="text-purple-900">İhlal ve Saldırı Simülasyonu (BAS):</strong> Picus Security, Mandiant Security Validation, Cymulate gibi platformlar.</div>
-                            <div><strong class="text-purple-900">Tehdit Simülasyonu Çerçeveleri:</strong> MITRE CALDERA, Atomic Red Team, Scythe gibi açık kaynaklı veya ticari platformlar.</div>
+
+                        <div class="flip-card" id="skill-red-temel-2">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-50 border-red-200">
+                                    <strong>Network Keşif:</strong> Nmap ile ağ haritalama ve port tarama gibi temel keşif faaliyetlerini anlama ve uygulama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Nmap temel tarama tipleri (`-sS`, `-sV`, `-sC`), `whois`, `nslookup` kullanımı.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> `Beginner-Network-Pentesting` reposu, Nmap resmi dokümantasyonu.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> `scanme.nmap.org` adresi üzerinde temel Nmap taramaları yaparak açık portları ve servis versiyonlarını tespit edin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-temel-3">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-50 border-red-200">
+                                    <strong>Ev Laboratuvarı Kurulumu:</strong> VirtualBox/VMware ile zafiyetli makineler (Metasploitable, VulnHub) ile pratik ortamı kurma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Sanallaştırma, Network Tipleri (NAT, Host-only), Snapshot yönetimi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Full Ethical Hacking Course" videosu, VirtualBox dokümantasyonu.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> VirtualBox üzerine bir Kali Linux ve bir Metasploitable sanal makinesi kurun. İkisinin birbiriyle iletişim kurabildiğinden (ping) emin olun.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-temel-4">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-50 border-red-200">
+                                    <strong>Web Teknolojileri:</strong> HTTP/S protokolü, çerezler ve temel web zafiyetlerinin (OWASP Top 10) mantığını anlama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> HTTP Metotları (GET/POST), Durum Kodları, Çerezler, "View Source" analizi.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> OWASP Top 10 listesi, MDN Web Docs (HTTP).</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Herhangi bir web sitesine giriş yaparken tarayıcınızın "Geliştirici Araçları" (F12) Network sekmesini açıp giden istekleri ve gelen çerezleri inceleyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-temel-5">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-50 border-red-200">
+                                    <strong>Betik Dili Temelleri:</strong> Keşif veya otomasyon için temel Python veya Bash betikleri okuma ve yazma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Değişkenler, Döngüler, Koşullu İfadeler (if/else), Temel Dosya Okuma/Yazma.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Codecademy veya freeCodeCamp gibi platformların ücretsiz Python başlangıç kursları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir metin dosyasındaki IP adreslerini satır satır okuyup her birine `ping` komutu gönderen basit bir Python veya Bash betiği yazın.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flip-card" id="skill-red-temel-6">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-50 border-red-200">
+                                    <strong>Sosyal Mühendislik Farkındalığı:</strong> Oltalama (Phishing), sahte arama (Vishing) gibi en yaygın sosyal mühendislik taktiklerini bilme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Oltalama (Phishing), Bahaneler (Pretexting), Yemleme (Baiting), Bilgi Toplama.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "The Art of Deception" kitabı (Kevin Mitnick), Social-Engineer.org sitesi.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> İnternette bulabileceğiniz bilinen oltalama e-posta örneklerini inceleyerek, kullanıcıyı tuzağa düşürmek için kullanılan psikolojik tetikleyicileri (örn: aciliyet, korku) listeleyin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-red-200 pb-2 mb-4">🛠️ Orta Seviye (Practitioner)</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <div class="flip-card" id="skill-red-orta-1">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-100 border-red-300">
+                                    <strong>Web Uygulama Sızma Testleri:</strong> Burp Suite kullanarak OWASP Top 10 zafiyetlerini (SQLi, XSS, CSRF) manuel bulma ve sömürme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Proxy kullanımı, Repeater, Intruder, SQL Injection, Cross-Site Scripting (XSS).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> PortSwigger "Web Security Academy", OWASP "Juice Shop" projesi.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> PortSwigger Academy'nin interaktif laboratuvarlarında bir "Reflected XSS" zafiyetini bularak `alert(1)` komutunu çalıştırmayı deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-orta-2">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-100 border-red-300">
+                                    <strong>Sömürü (Exploitation):</strong> Metasploit Framework'ünü kullanarak bilinen zafiyetler için exploit bulma ve çalıştırma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> `msfconsole` kullanımı, `search`, `use`, `set`, `exploit` komutları, Payload'lar (Meterpreter).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Metasploit Unleashed (Offensive Security'nin ücretsiz rehberi), Hack The Box platformu.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Ev laboratuvarınızdaki Metasploitable makinesinde, "vsftpd 2.3.4" zafiyetini Metasploit ile sömürerek bir komut satırı (shell) elde edin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-orta-3">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-100 border-red-300">
+                                    <strong>Bug Bounty Faaliyetleri:</strong> Gerçek sistemlerde zafiyet arama ve standartlara uygun raporlama yapma.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Program Kapsamı (Scope) okuma, Raporlama Standartları, Keşif (Recon) teknikleri.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Bug Bounty Mevzusu" GitHub dokümanı, HackerOne "Hacker101" videoları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Sadece keşif (recon) yapmaya izin veren bir bug bounty programı seçin ve hedef domain'e ait alt domain'leri (subdomain) bulmaya çalışın.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-orta-4">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-100 border-red-300">
+                                    <strong>Ağ İçi Sızma Testi:</strong> Yetki yükseltme (Privilege Escalation) ve ağ içinde yanal hareket (Lateral Movement) tekniklerini uygulama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Yanlış yapılandırılmış servisler, `sudo -l` kontrolü, `LinPEAS`/`WinPEAS` betikleri, Pass-the-Hash.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Siber Güvenlik Mülakat Soruları" (Yetki Yükseltme bölümü), TryHackMe "Lateral Movement" odaları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Hack The Box'taki başlangıç seviyesi bir makinede, düşük yetkili bir kullanıcıdan root/SYSTEM yetkisine yükselmeyi deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-orta-5">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-100 border-red-300">
+                                    <strong>Active Directory (AD) Temelleri:</strong> Temel AD keşfi yapma ve LLMNR/NBT-NS poisoning gibi yaygın saldırıları deneme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Domain Controller, Kullanıcılar & Gruplar, `Responder` aracı, Kerberos mantığı.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> TryHackMe "Wreath" ve "Throwback" ağları, "AD-Security" blogu.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Ev laboratuvarınıza bir Active Directory ortamı kurun (örn: "AD Pentesting Lab") ve Responder aracını çalıştırarak ağdaki hash'leri yakalamayı deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-orta-6">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-100 border-red-300">
+                                    <strong>Parola Saldırıları:</strong> Hashcat, John the Ripper gibi araçlarla çevrimdışı parola kırma ve parola spreyi (password spraying) saldırıları.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Hash türleri (NTLM, MD5), Sözlük Saldırısı vs Brute-Force, Maske Saldırıları.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Hashcat Wiki, "CrackStation" online hash kırma servisi (test için).</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Basit bir kelimenin (örn: "password123") MD5 hash'ini oluşturun ve Hashcat ile bir sözlük dosyası kullanarak bu hash'i kırmayı deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-lg font-semibold text-slate-800 border-b-2 border-red-200 pb-2 mb-4">🚀 Uzman Seviye (Expert)</h5>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                        <div class="flip-card" id="skill-red-uzman-1">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-200 border-red-400">
+                                    <strong>Savunma Atlatma (Evasion):</strong> Antivirüs, EDR ve WAF gibi güvenlik ürünlerini atlatmaya yönelik C2 altyapıları kurma ve payload'lar hazırlama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Payload gizleme (Obfuscation), C2 (Komuta-Kontrol) altyapısı, Bellekte doğrudan çalıştırma.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "Red Team Development and Operations" kitabı, Veil ve Shellter gibi araçların dokümantasyonları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Temel bir meterpreter payload'ı oluşturun ve bir obfuscation aracı ile imzasını değiştirip VirusTotal'deki tespit oranını karşılaştırın.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-uzman-2">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-200 border-red-400">
+                                    <strong>Gelişmiş AD Saldırıları:</strong> Kerberoasting, Golden/Silver Ticket gibi gelişmiş Active Directory saldırılarını uygulama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Kerberos, NTLM Relay, DCShadow, DCSync, Kanıtlama (Delegation) saldırıları.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> ADSecurity.org blogu, IppSec YouTube kanalı (Hack The Box çözümleri).</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> AD laboratuvarınızda, `mimikatz` aracını kullanarak bir Golden Ticket oluşturmayı ve bunu kullanarak yetkinizi yükseltmeyi deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-uzman-3">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-200 border-red-400">
+                                    <strong>Exploit Geliştirme:</strong> Buffer overflow gibi temel zafiyetler için manuel exploit yazma ve shellcode hazırlama.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Yığın (Stack) tabanlı Buffer Overflow, SEH Overflows, Fuzzing, ROP Chains.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Corelan Team'in "Exploit writing tutorial" serisi, "The Shellcoder's Handbook" kitabı.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir debugger (Immunity/x64dbg) kullanarak, bilinen zafiyetli bir uygulama (örn: Vulnserver) üzerinde temel bir stack overflow exploiti yazın.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-uzman-4">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-200 border-red-400">
+                                    <strong>Bulut Sızma Testleri:</strong> Yanlış yapılandırılmış bulut servislerini (S3 buckets vb.) sömürme, bulut ortamlarında yanal hareket.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> IAM Rol sömürüsü, Sunucusuz (Serverless) uygulama zafiyetleri, Konteyner (Container) kaçışları.</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> Rhino Security Labs "Pacu" aracı, "CloudGoat" zafiyetli AWS ortamı.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> CloudGoat senaryolarından birini takip ederek, yanlış yapılandırılmış bir IAM rolü ile yetki yükseltmeyi deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-uzman-5">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-200 border-red-400">
+                                    <strong>Mobil Sızma Testleri:</strong> iOS/Android uygulamalarında tersine mühendislik yapma, trafiği analiz etme ve zafiyet sömürme.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Sertifika sabitleme (Pinning) atlatma, `Frida` ile enjeksiyon, `objection` kullanımı, Tersine mühendislik (APK/IPA).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> OWASP Mobile Security Testing Guide (MSTG), "Damn Insecure and Vulnerable App" (DIVA) projesi.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Bir emülatör üzerinde zafiyetli bir Android uygulaması kurup, Burp Suite ile trafiğini yakalamayı ve SSL pinning'i atlatmayı deneyin.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" id="skill-red-uzman-6">
+                            <div class="skill-controls">
+                                <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
+                                <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
+                            </div>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front bg-red-200 border-red-400">
+                                    <strong>Donanım ve IoT Testleri:</strong> Gömülü sistemler ve IoT cihazlarında firmware analizi ve donanım seviyesinde zafiyet araştırması.
+                                </div>
+                                <div class="flip-card-back">
+                                    <h6 class="font-bold mb-1">Öğrenim Planı</h6>
+                                    <p class="text-xs mb-2"><strong>Konular:</strong> Firmware analizi (`binwalk`), UART/JTAG arayüzleri, RFID/NFC klonlama, SDR (Software Defined Radio).</p>
+                                    <p class="text-xs mb-2"><strong>Kaynaklar:</strong> "The IoT Hacker's Handbook" kitabı, "DEF CON" donanım hackleme videoları.</p>
+                                    <p class="text-xs"><strong>Pratik:</strong> Eski bir modem veya router'ın firmware'ini üretici sitesinden indirin ve `binwalk` aracıyla içindeki dosya sistemini çıkarmayı deneyin.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1029,116 +1656,44 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- BEYİN 1: YETKİNLİK VERİ TABANI ---
     const skillsData = {
-        // SAVUNMACI - TEMEL
-        'skill-blue-temel-1': { name: 'Siber Güvenlik Temelleri', front: "<strong>Siber Güvenlik Temelleri:</strong> CIA Üçlüsü, temel saldırı türleri (Phishing, Malware, DoS) ve savunma konseptlerini anlama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> CIA Üçlüsü, Tehdit/Zafiyet/Risk, AAA, Yaygın Saldırı Vektörleri.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> <a href='https://aws.amazon.com/tr/what-is/cybersecurity/' target='_blank' class='text-sky-600 hover:underline'>AWS</a> & <a href='https://www.cisco.com/site/us/en/learn/topics/security/what-is-cybersecurity.html' target='_blank' class='text-sky-600 hover:underline'>Cisco</a> tanımları, CompTIA Sec+ notları.</p><p class='text-xs'><strong>Pratik:</strong> Bir e-ticaret sitesi senaryosu için potansiyel tehditleri ve bunların CIA'in hangi unsurunu ihlal edeceğini listeleyin.</p>" },
-        'skill-blue-temel-2': { name: 'Network Bilgisi', front: "<strong>Network Bilgisi:</strong> OSI ve TCP/IP modellerini, temel protokolleri (HTTP, DNS, SMTP) ve portların görevlerini bilme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> OSI vs TCP/IP, Subnetting, Yaygın Portlar (80, 443, 22, 25), DNS Çözümleme.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> GeeksforGeeks 'Computer Network Tutorial', 'Network Başlangıç Temelleri' GitHub dokümanı.</p><p class='text-xs'><strong>Pratik:</strong> Komut satırında `ping google.com` ve `tracert google.com` komutlarını çalıştırıp çıktılarını yorumlamaya çalışın.</p>" },
-        'skill-blue-temel-3': { name: 'İşletim Sistemi Bilgisi', front: "<strong>İşletim Sistemi Bilgisi:</strong> Windows ve Linux'ta temel komut satırı kullanımı, izinler ve dosya sistemi hakkında bilgi sahibi olma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Linux (ls, cd, cat, grep, chmod), Windows (ipconfig, netstat), Dosya İzinleri (RWX).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> TryHackMe 'Linux Fundamentals' modülü, 'OverTheWire: Bandit' CTF'i.</p><p class='text-xs'><strong>Pratik:</strong> Bir Linux sanal makinede yeni bir kullanıcı oluşturun ve bu kullanıcının sadece kendi ev dizinine yazma izni olduğundan emin olun.</p>" },
-        'skill-blue-temel-4': { name: 'Güvenlik Araçları Farkındalığı', front: "<strong>Güvenlik Araçları Farkındalığı:</strong> Antivirüs, Firewall ve SIEM gibi araçların ne işe yaradığını kavramsal olarak bilme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> İmza Tabanlı vs Davranışsal Analiz, Ağ Güvenlik Duvarı vs WAF, Log Korelasyonu.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'SIEM nedir?', 'Firewall nedir?' gibi temel konularda hazırlanmış YouTube videoları.</p><p class='text-xs'><strong>Pratik:</strong> Windows Defender Güvenlik Duvarı'nda belirli bir programın internete çıkışını engelleyen bir kural yazın.</p>" },
-        'skill-blue-temel-5': { name: 'Bulut Bilişim Temelleri', front: "<strong>Bulut Bilişim Temelleri:</strong> IaaS, PaaS, SaaS modellerini ve temel bulut güvenlik sorumluluklarını (Paylaşılan Sorumluluk Modeli) anlama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Sanallaştırma vs Bulut, Paylaşılan Sorumluluk Modeli, Temel Servisler (EC2, S3).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> AWS'in 'Cloud Practitioner Essentials' ücretsiz dijital eğitimi.</p><p class='text-xs'><strong>Pratik:</strong> AWS Free Tier (ücretsiz katman) hesabı oluşturun ve bir sanal makine (EC2 instance) ayağa kaldırıp ona bağlanmayı deneyin.</p>" },
-        'skill-blue-temel-6': { name: 'Kimlik Yönetimi Kavramları', front: "<strong>Kimlik Yönetimi Kavramları:</strong> Kimlik doğrulama (Authentication) ve yetkilendirmenin (Authorization) ne anlama geldiğini bilme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Authentication vs Authorization, Çok Faktörlü Kimlik Doğrulama (MFA), En Az Yetki Prensibi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Okta ve Auth0 gibi kimlik yönetimi firmalarının bloglarındaki temel makaleler.</p><p class='text-xs'><strong>Pratik:</strong> Kullandığınız bir sosyal medya hesabında Çok Faktörlü Kimlik Doğrulama (MFA) özelliğini aktif hale getirin.</p>" },
-        'skill-blue-orta-1': { name: 'SOC Operasyonları (Tier 1/2)', front: "<strong>SOC Operasyonları (Tier 1/2):</strong> Güvenlik operasyon merkezinde alarm analizi (triage) yapma ve olay müdahale (IR) prosedürlerini takip etme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Olay Sınıflandırma (Triage), Olay Müdahale Yaşam Döngüsü (PICERL), Kanıt Toplama, Raporlama.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'SIEM' ve 'Incident Response' konulu YouTube videoları, SOC analisti mülakat soruları.</p><p class='text-xs'><strong>Pratik:</strong> LetsDefend.io gibi platformlarda yayınlanmış SOC alarm senaryolarını çözmeye çalışın.</p>" },
-        'skill-blue-orta-2': { name: 'SIEM & Log Yönetimi', front: "<strong>SIEM & Log Yönetimi:</strong> Splunk, QRadar gibi SIEM'lerde log kaynaklarını analiz etme ve temel korelasyon kuralları yazma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Log Toplama ve Normalizasyon, Korelasyon Kuralları Mantığı, Dashboard Oluşturma.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Splunk'ın ücretsiz 'Fundamentals' eğitimi, ELK Stack (Elastic) dokümantasyonu.</p><p class='text-xs'><strong>Pratik:</strong> Kendi ev ağınızdaki modem ve bilgisayar loglarını bir SIEM'e (örn: Wazuh) aktarıp analiz etmeyi deneyin.</p>" },
-        'skill-blue-orta-3': { name: 'Ağ Trafiği Analizi', front: "<strong>Ağ Trafiği Analizi:</strong> Wireshark ile ağ paketlerini analiz ederek anomali ve şüpheli aktiviteleri tespit etme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> TCP/UDP başlıkları, DNS ve HTTP sorguları, TLS El Sıkışması (Handshake), Filtreleme.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Network Başlangıç Temelleri' dokümanı, GeeksforGeeks Network Tutorial.</p><p class='text-xs'><strong>Pratik:</strong> Wireshark'ın 'Sample Captures' sayfasından örnek bir .pcap dosyası indirip içindeki HTTP trafiğini inceleyin.</p>" },
-        'skill-blue-orta-4': { name: 'Zafiyet Yönetimi', front: "<strong>Zafiyet Yönetimi:</strong> Nessus, OpenVAS gibi araçlarla zafiyet taramaları yapma ve raporları yorumlayarak önceliklendirme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> CVSS Skorlama Sistemi, Zafiyet Yaşam Döngüsü, Rapor Yorumlama, False Positive/Negative.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> OWASP Top 10 listesi, Nessus Essentials (ücretsiz sürüm) dokümantasyonu.</p><p class='text-xs'><strong>Pratik:</strong> Kendi ev laboratuvarınızdaki zafiyetli bir makineye (örn: Metasploitable) Nessus ile tarama yapın ve sonuçları analiz edin.</p>" },
-        'skill-blue-orta-5': { name: 'Uç Nokta Güvenliği (EDR)', front: "<strong>Uç Nokta Güvenliği (EDR):</strong> EDR alarmlarını inceleme, tehditleri karantinaya alma ve temel endpoint adli bilişim analizi yapma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Süreç (Process) takibi, MITRE ATT&CK Framework'ü ile eşleştirme, İndikatörler (IOC/IOA).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'EDR Nedir?' konulu teknik blog yazıları, CrowdStrike ve SentinelOne gibi üreticilerin ürün sayfaları.</p><p class='text-xs'><strong>Pratik:</strong> Bir EDR platformunun deneme sürümünü (trial) indirip, bilinen zararsız bir aracı (örn: Sysinternals) çalıştırarak nasıl loglar ürettiğini gözlemleyin.</p>" },
-        'skill-blue-orta-6': { name: 'Tehdit İstihbaratı (CTI)', front: "<strong>Tehdit İstihbaratı (CTI):</strong> Açık kaynaklı (OSINT) ve ticari tehdit istihbaratı verilerini kullanarak savunma mekanizmalarını güçlendirme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Stratejik/Taktik/Operasyonel İstihbarat, Tehdit Aktörleri, IOC'ler, TTP'ler.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Secops.com ve KPMG'nin siber istihbarat makaleleri, Mandiant ve CrowdStrike blogları.</p><p class='text-xs'><strong>Pratik:</strong> VirusTotal veya AlienVault OTX gibi platformlarda, güncel bir zararlı yazılım kampanyasına ait IP adresi veya domain'leri (IOC) araştırın.</p>" },
-        'skill-blue-uzman-1': { name: 'Proaktif Tehdit Avcılığı', front: "<strong>Proaktif Tehdit Avcılığı (Threat Hunting):</strong> \"Sisteme sızıldı\" varsayımıyla, hipotezlere dayalı olarak ağ ve sistemlerde gizli tehditleri proaktif olarak arama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Avcılık Döngüsü (Hypothesis, Investigation, Uncovering, Informing), Pyramid of Pain, MITRE ATT&CK TTP'leri.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> David J. Bianco'nun 'Pyramid of Pain' blog yazısı, SANS'ın 'Threat Hunting' posterleri.</p><p class='text-xs'><strong>Pratik:</strong> SIEM üzerinde, MITRE ATT&CK'den seçtiğiniz bir tekniğin (örn: 'Scheduled Task') normal dışı kullanımını arayacak bir sorgu yazın.</p>" },
-        'skill-blue-uzman-2': { name: 'Dijital Adli Bilişim (DFIR)', front: "<strong>Dijital Adli Bilişim (DFIR):</strong> Kök neden analizi için derinlemesine disk, bellek (memory) ve bulut ortamı adli bilişim analizi yapma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Kanıt Toplama (Acquisition), Olay Zaman Çizelgesi (Timeline) oluşturma, Volatility ile bellek analizi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'The Art of Memory Forensics' kitabı, SANS FOR508 kurs içeriği özeti.</p><p class='text-xs'><strong>Pratik:</strong> 'Memory Forensics' CTF'lerinden bir bellek imajı (.vmem) indirip Volatility ile içindeki aktif network bağlantılarını listeleyin.</p>" },
-        'skill-blue-uzman-3': { name: 'Zararlı Yazılım Analizi', front: "<strong>Zararlı Yazılım Analizi:</strong> Statik ve dinamik analiz yöntemleriyle, sandbox ortamlarında zararlı yazılımları tersine mühendislikle analiz etme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Statik Analiz (strings, PE headers), Dinamik Analiz (Sandbox), Temel Tersine Mühendislik (Disassembly).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Any.Run ve Hybrid Analysis gibi online sandbox'lar, 'Practical Malware Analysis' kitabı.</p><p class='text-xs'><strong>Pratik:</strong> MalwareBazaar'dan bir örnek indirip (güvenli bir sanal makinede) Any.Run'a yükleyin ve oluşturduğu ağ trafiği ile dosya sistemi değişikliklerini raporlayın.</p>" },
-        'skill-blue-uzman-4': { name: 'Otomasyon (SOAR & Scripting)', front: "<strong>Otomasyon (SOAR & Scripting):</strong> Python/PowerShell ile süreçleri otomatize etme, SOAR platformlarını etkin kullanma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> API Entegrasyonları, Playbook (Oyun Kitabı) oluşturma, Python `requests` kütüphanesi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Shuffle, TheHive/Cortex gibi açık kaynaklı SOAR platformları, 'Automate the Boring Stuff with Python' kitabı.</p><p class='text-xs'><strong>Pratik:</strong> VirusTotal API'si için ücretsiz bir anahtar alıp, bir dosya hash'ini sorgulayan ve sonucunu yazdıran basit bir Python betiği yazın.</p>" },
-        'skill-blue-uzman-5': { name: 'Bulut Güvenlik Mimarisi', front: "<strong>Bulut Güvenlik Mimarisi:</strong> Güvenli bulut altyapıları tasarlama, CASB, CWPP gibi bulut-özel güvenlik çözümlerini yönetme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> CSPM, CWPP, 'Infrastructure as Code' (IaC) Güvenliği (örn: Terrascan), Zero Trust Mimarisi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> AWS ve Azure'ın 'Well-Architected Framework' güvenlik dokümanları.</p><p class='text-xs'><strong>Pratik:</strong> Basit bir AWS VPC (Sanal Özel Ağ) mimarisini, herkese açık ve özel alt ağlar (subnet) içerecek şekilde bir diyagram aracıyla çizin.</p>" },
-        'skill-blue-uzman-6': { name: 'Yapay Zeka ve Güvenlik', front: "<strong>Yapay Zeka ve Güvenlik:</strong> Güvenlik operasyonlarında anomali tespiti ve tehdit öngörüsü için yapay zeka ve makine öğrenmesi modellerini kullanma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> User and Entity Behavior Analytics (UEBA), Anomali Tespiti Algoritmaları, Güvenlik için Veri Bilimi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Siber Güvenliğin Geleceği: Yapay Zeka ve Yeni Tehditler' ve 'Siber Saldırıların Geleceği' makaleleri.</p><p class='text-xs'><strong>Pratik:</strong> Bir SIEM veya EDR platformunun UEBA özelliğinin, şüpheli kullanıcı davranışlarını nasıl tespit ettiğini anlatan bir blog yazısı veya video izleyip özetleyin.</p>" },
-        'skill-red-temel-1': { name: 'Sızma Testi Metodolojileri', front: "<strong>Sızma Testi Metodolojileri:</strong> PTES, OSSTMM, Cyber Kill Chain gibi standartları kavramsal olarak bilme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Keşif, Tarama, Erişim Kazanma, Yetki Yükseltme, İzleri Temizleme aşamaları.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Siber Güvenlik Dalları ve Sertifikaları' dokümanı, 'PTES' resmi web sitesi.</p><p class='text-xs'><strong>Pratik:</strong> Basit bir saldırı senaryosunu (örn: bir web sitesine sızma) Cyber Kill Chain adımlarına göre kağıt üzerinde haritalayın.</p>" },
-        'skill-red-temel-2': { name: 'Network Keşif', front: "<strong>Network Keşif:</strong> Nmap ile ağ haritalama ve port tarama gibi temel keşif faaliyetlerini anlama ve uygulama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Nmap temel tarama tipleri (`-sS`, `-sV`, `-sC`), `whois`, `nslookup` kullanımı.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> `Beginner-Network-Pentesting` reposu, Nmap resmi dokümantasyonu.</p><p class='text-xs'><strong>Pratik:</strong> `scanme.nmap.org` adresi üzerinde temel Nmap taramaları yaparak açık portları ve servis versiyonlarını tespit edin.</p>" },
-        'skill-red-temel-3': { name: 'Ev Laboratuvarı Kurulumu', front: "<strong>Ev Laboratuvarı Kurulumu:</strong> VirtualBox/VMware ile zafiyetli makineler (Metasploitable, VulnHub) ile pratik ortamı kurma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Sanallaştırma, Network Tipleri (NAT, Host-only), Snapshot yönetimi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Full Ethical Hacking Course' videosu, VirtualBox dokümantasyonu.</p><p class='text-xs'><strong>Pratik:</strong> VirtualBox üzerine bir Kali Linux ve bir Metasploitable sanal makinesi kurun. İkisinin birbiriyle iletişim kurabildiğinden (ping) emin olun.</p>" },
-        'skill-red-temel-4': { name: 'Web Teknolojileri', front: "<strong>Web Teknolojileri:</strong> HTTP/S protokolü, çerezler ve temel web zafiyetlerinin (OWASP Top 10) mantığını anlama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> HTTP Metotları (GET/POST), Durum Kodları, Çerezler, 'View Source' analizi.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> OWASP Top 10 listesi, MDN Web Docs (HTTP).</p><p class='text-xs'><strong>Pratik:</strong> Herhangi bir web sitesine giriş yaparken tarayıcınızın 'Geliştirici Araçları' (F12) Network sekmesini açıp giden istekleri ve gelen çerezleri inceleyin.</p>" },
-        'skill-red-temel-5': { name: 'Betik Dili Temelleri', front: "<strong>Betik Dili Temelleri:</strong> Keşif veya otomasyon için temel Python veya Bash betikleri okuma ve yazma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Değişkenler, Döngüler, Koşullu İfadeler (if/else), Temel Dosya Okuma/Yazma.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Codecademy veya freeCodeCamp gibi platformların ücretsiz Python başlangıç kursları.</p><p class='text-xs'><strong>Pratik:</strong> Bir metin dosyasındaki IP adreslerini satır satır okuyup her birine `ping` komutu gönderen basit bir Python veya Bash betiği yazın.</p>" },
-        'skill-red-temel-6': { name: 'Sosyal Mühendislik Farkındalığı', front: "<strong>Sosyal Mühendislik Farkındalığı:</strong> Oltalama (Phishing), sahte arama (Vishing) gibi en yaygın sosyal mühendislik taktiklerini bilme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Oltalama (Phishing), Bahaneler (Pretexting), Yemleme (Baiting), Bilgi Toplama.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'The Art of Deception' kitabı (Kevin Mitnick), Social-Engineer.org sitesi.</p><p class='text-xs'><strong>Pratik:</strong> İnternette bulabileceğiniz bilinen oltalama e-posta örneklerini inceleyerek, kullanıcıyı tuzağa düşürmek için kullanılan psikolojik tetikleyicileri (örn: aciliyet, korku) listeleyin.</p>" },
-        'skill-red-orta-1': { name: 'Web Uygulama Sızma Testleri', front: "<strong>Web Uygulama Sızma Testleri:</strong> Burp Suite kullanarak OWASP Top 10 zafiyetlerini (SQLi, XSS, CSRF) manuel bulma ve sömürme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Proxy kullanımı, Repeater, Intruder, SQL Injection, Cross-Site Scripting (XSS).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> PortSwigger 'Web Security Academy', OWASP 'Juice Shop' projesi.</p><p class='text-xs'><strong>Pratik:</strong> PortSwigger Academy'nin interaktif laboratuvarlarında bir 'Reflected XSS' zafiyetini bularak `alert(1)` komutunu çalıştırmayı deneyin.</p>" },
-        'skill-red-orta-2': { name: 'Sömürü (Exploitation)', front: "<strong>Sömürü (Exploitation):</strong> Metasploit Framework'ünü kullanarak bilinen zafiyetler için exploit bulma ve çalıştırma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> `msfconsole` kullanımı, `search`, `use`, `set`, `exploit` komutları, Payload'lar (Meterpreter).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Metasploit Unleashed (Offensive Security'nin ücretsiz rehberi), Hack The Box platformu.</p><p class='text-xs'><strong>Pratik:</strong> Ev laboratuvarınızdaki Metasploitable makinesinde, 'vsftpd 2.3.4' zafiyetini Metasploit ile sömürerek bir komut satırı (shell) elde edin.</p>" },
-        'skill-red-orta-3': { name: 'Bug Bounty Faaliyetleri', front: "<strong>Bug Bounty Faaliyetleri:</strong> Gerçek sistemlerde zafiyet arama ve standartlara uygun raporlama yapma.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Program Kapsamı (Scope) okuma, Raporlama Standartları, Keşif (Recon) teknikleri.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Bug Bounty Mevzusu' GitHub dokümanı, HackerOne 'Hacker101' videoları.</p><p class='text-xs'><strong>Pratik:</strong> Sadece keşif (recon) yapmaya izin veren bir bug bounty programı seçin ve hedef domain'e ait alt domain'leri (subdomain) bulmaya çalışın.</p>" },
-        'skill-red-orta-4': { name: 'Ağ İçi Sızma Testi', front: "<strong>Ağ İçi Sızma Testi:</strong> Yetki yükseltme (Privilege Escalation) ve ağ içinde yanal hareket (Lateral Movement) tekniklerini uygulama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Yanlış yapılandırılmış servisler, `sudo -l` kontrolü, `LinPEAS`/`WinPEAS` betikleri, Pass-the-Hash.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Siber Güvenlik Mülakat Soruları' (Yetki Yükseltme bölümü), TryHackMe 'Lateral Movement' odaları.</p><p class='text-xs'><strong>Pratik:</strong> Hack The Box'taki başlangıç seviyesi bir makinede, düşük yetkili bir kullanıcıdan root/SYSTEM yetkisine yükselmeyi deneyin.</p>" },
-        'skill-red-orta-5': { name: 'Active Directory (AD) Temelleri', front: "<strong>Active Directory (AD) Temelleri:</strong> Temel AD keşfi yapma ve LLMNR/NBT-NS poisoning gibi yaygın saldırıları deneme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Domain Controller, Kullanıcılar & Gruplar, `Responder` aracı, Kerberos mantığı.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> TryHackMe 'Wreath' ve 'Throwback' ağları, 'AD-Security' blogu.</p><p class='text-xs'><strong>Pratik:</strong> Ev laboratuvarınıza bir Active Directory ortamı kurun (örn: 'AD Pentesting Lab') ve Responder aracını çalıştırarak ağdaki hash'leri yakalamayı deneyin.</p>" },
-        'skill-red-orta-6': { name: 'Parola Saldırıları', front: "<strong>Parola Saldırıları:</strong> Hashcat, John the Ripper gibi araçlarla çevrimdışı parola kırma ve parola spreyi (password spraying) saldırıları.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Hash türleri (NTLM, MD5), Sözlük Saldırısı vs Brute-Force, Maske Saldırıları.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Hashcat Wiki, 'CrackStation' online hash kırma servisi (test için).</p><p class='text-xs'><strong>Pratik:</strong> Basit bir kelimenin (örn: 'password123') MD5 hash'ini oluşturun ve Hashcat ile bir sözlük dosyası kullanarak bu hash'i kırmayı deneyin.</p>" },
-        'skill-red-uzman-1': { name: 'Savunma Atlatma (Evasion)', front: "<strong>Savunma Atlatma (Evasion):</strong> Antivirüs, EDR ve WAF gibi güvenlik ürünlerini atlatmaya yönelik C2 altyapıları kurma ve payload'lar hazırlama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Payload gizleme (Obfuscation), C2 (Komuta-Kontrol) altyapısı, Bellekte doğrudan çalıştırma.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'Red Team Development and Operations' kitabı, Veil ve Shellter gibi araçların dokümantasyonları.</p><p class='text-xs'><strong>Pratik:</strong> Temel bir meterpreter payload'ı oluşturun ve bir obfuscation aracı ile imzasını değiştirip VirusTotal'deki tespit oranını karşılaştırın.</p>" },
-        'skill-red-uzman-2': { name: 'Gelişmiş AD Saldırıları', front: "<strong>Gelişmiş AD Saldırıları:</strong> Kerberoasting, Golden/Silver Ticket gibi gelişmiş Active Directory saldırılarını uygulama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Kerberos, NTLM Relay, DCShadow, DCSync, Kanıtlama (Delegation) saldırıları.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> ADSecurity.org blogu, IppSec YouTube kanalı (Hack The Box çözümleri).</p><p class='text-xs'><strong>Pratik:</strong> AD laboratuvarınızda, `mimikatz` aracını kullanarak bir Golden Ticket oluşturmayı ve bunu kullanarak yetkinizi yükseltmeyi deneyin.</p>" },
-        'skill-red-uzman-3': { name: 'Exploit Geliştirme', front: "<strong>Exploit Geliştirme:</strong> Buffer overflow gibi temel zafiyetler için manuel exploit yazma ve shellcode hazırlama.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Yığın (Stack) tabanlı Buffer Overflow, SEH Overflows, Fuzzing, ROP Chains.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Corelan Team'in 'Exploit writing tutorial' serisi, 'The Shellcoder's Handbook' kitabı.</p><p class='text-xs'><strong>Pratik:</strong> Bir debugger (Immunity/x64dbg) kullanarak, bilinen zafiyetli bir uygulama (örn: Vulnserver) üzerinde temel bir stack overflow exploiti yazın.</p>" },
-        'skill-red-uzman-4': { name: 'Bulut Sızma Testleri', front: "<strong>Bulut Sızma Testleri:</strong> Yanlış yapılandırılmış bulut servislerini (S3 buckets vb.) sömürme, bulut ortamlarında yanal hareket.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> IAM Rol sömürüsü, Sunucusuz (Serverless) uygulama zafiyetleri, Konteyner (Container) kaçışları.</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> Rhino Security Labs 'Pacu' aracı, 'CloudGoat' zafiyetli AWS ortamı.</p><p class='text-xs'><strong>Pratik:</strong> CloudGoat senaryolarından birini takip ederek, yanlış yapılandırılmış bir IAM rolü ile yetki yükseltmeyi deneyin.</p>" },
-        'skill-red-uzman-5': { name: 'Mobil Sızma Testleri', front: "<strong>Mobil Sızma Testleri:</strong> iOS/Android uygulamalarında tersine mühendislik yapma, trafiği analiz etme ve zafiyet sömürme.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Sertifika sabitleme (Pinning) atlatma, `Frida` ile enjeksiyon, `objection` kullanımı, Tersine mühendislik (APK/IPA).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> OWASP Mobile Security Testing Guide (MSTG), 'Damn Insecure and Vulnerable App' (DIVA) projesi.</p><p class='text-xs'><strong>Pratik:</strong> Bir emülatör üzerinde zafiyetli bir Android uygulaması kurup, Burp Suite ile trafiğini yakalamayı ve SSL pinning'i atlatmayı deneyin.</p>" },
-        'skill-red-uzman-6': { name: 'Donanım ve IoT Testleri', front: "<strong>Donanım ve IoT Testleri:</strong> Gömülü sistemler ve IoT cihazlarında firmware analizi ve donanım seviyesinde zafiyet araştırması.", back: "<h6 class='font-bold mb-1'>Öğrenim Planı</h6><p class='text-xs mb-2'><strong>Konular:</strong> Firmware analizi (`binwalk`), UART/JTAG arayüzleri, RFID/NFC klonlama, SDR (Software Defined Radio).</p><p class='text-xs mb-2'><strong>Kaynaklar:</strong> 'The IoT Hacker's Handbook' kitabı, 'DEF CON' donanım hackleme videoları.</p><p class='text-xs'><strong>Pratik:</strong> Eski bir modem veya router'ın firmware'ini üretici sitesinden indirin ve `binwalk` aracıyla içindeki dosya sistemini çıkarmayı deneyin.</p>" }
-    };
-    
-    // --- BEYİN 2: KURS VERİ TABANI ---
-    const coursesData = {
-        'udemy-atil-python-etik-hacker': { id: 'udemy-atil-python-etik-hacker', title: 'Python: Sıfırdan İleri Seviyeye - Etik Hacker Örnekleriyle', url: 'https://www.udemy.com/course/python-sifirdan-ileri-seviye-programlama-2020/', provides_skills: ['skill-red-temel-5', 'skill-blue-uzman-4'] },
-        'udemy-atil-etik-hacker-olma': { id: 'udemy-atil-etik-hacker-olma', title: 'Etik Hacker Olma Kursu', url: 'https://www.udemy.com/course/etik-hacker-olma-kursu/', provides_skills: ['skill-red-orta-1','skill-red-orta-2','skill-red-orta-4','skill-red-orta-5'] },
-        'udemy-atil-seviye2': { id: 'udemy-atil-seviye2', title: 'Etik Hacker Olma Kursu - Seviye 2', url: 'https://www.udemy.com/course/etik-hacker-olma-kursu-seviye-2-ag-ici-saldirilar/', provides_skills: ['skill-red-orta-4', 'skill-red-orta-5', 'skill-red-orta-6', 'skill-red-uzman-2'] },
-        'udemy-atil-mobil-hacker': { id: 'udemy-atil-mobil-hacker', title: 'Etik Hacker Olma: Mobil Uygulamalar', url: 'https://www.udemy.com/course/etik-hacker-olma-mobil-uygulamalar-ve-telefonlar/', provides_skills: ['skill-red-uzman-5'] },
-        'udemy-atil-bug-bounty': { id: 'udemy-atil-bug-bounty', title: 'Web Sızma Testleri ve Bug Bounty', url: 'https://www.udemy.com/course/etik-hacker-olmak-web-sizma-testleri-ve-bug-bounty/', provides_skills: ['skill-red-temel-4', 'skill-red-orta-1', 'skill-red-orta-3'] },
-        'udemy-atil-veri-bilimi': { id: 'udemy-atil-veri-bilimi', title: 'Veri Bilimi ve Makina Öğrenmesi', url: 'https://www.udemy.com/course/veri-bilimi-ve-makina-ogrenmesi-2025-100-gunluk-kamp/', provides_skills: ['skill-blue-uzman-6'] },
-        'udemy-mehmet-siber-guvenlik-linux': { id: 'udemy-mehmet-siber-guvenlik-linux', title: 'Sıfırdan Siber Güvenlik ve Linux', url: 'https://www.udemy.com/course/sifirdan-uygulamali-siber-guvenlik-ve-etik-hackerlik-kursu/', provides_skills: ['skill-blue-temel-1','skill-blue-temel-2','skill-blue-temel-3','skill-red-temel-1','skill-red-temel-2','skill-red-temel-3'] },
-        'udemy-levent-web-gelistirme': { id: 'udemy-levent-web-gelistirme', title: 'Sıfırdan Web Geliştirme Kursu', url: 'https://www.udemy.com/course/sifirdan-web-gelistirme-kursu-baslangic/', provides_skills: ['skill-red-temel-4'] },
-        'udemy-levent-bilgisayar-uzmanligi': { id: 'udemy-levent-bilgisayar-uzmanligi', title: 'Sıfırdan Bilgisayar Uzmanlığı', url: 'https://www.udemy.com/course/sfrdan-bilgisayar-uzmanlg-kursu/', provides_skills: ['skill-blue-temel-3'] },
-        'udemy-levent-etik-hacker-2025': { id: 'udemy-levent-etik-hacker-2025', title: 'Etik Hacker Olma Kursu (2025)', url: 'https://www.udemy.com/course/etik-hacker-olma-kursu-uygulamali-2023/', provides_skills: ['skill-blue-temel-1','skill-blue-temel-2','skill-red-temel-1','skill-red-temel-2','skill-red-temel-4','skill-red-orta-1','skill-red-temel-6'] },
-        'udemy-alperen-sonicwall': { id: 'udemy-alperen-sonicwall', title: 'Sonicwall Firewall Eğitimi', url: 'https://www.udemy.com/course/sonicwall-firewall-egitimi/', provides_skills: ['skill-blue-temel-4', 'skill-blue-orta-2'] },
-        'udemy-fatih-dark-web': { id: 'udemy-fatih-dark-web', title: 'Dark Web Tanıtım Kursu', url: 'https://www.udemy.com/course/dark-web-complete-introduction-to-the-deepdark-web-2023/', provides_skills: ['skill-blue-orta-6', 'skill-red-temel-6'] },
-        'udemy-sadik-pentest': { id: 'udemy-sadik-pentest', title: 'Uygulamalı Pentest ve Güvenlik', url: 'https://www.udemy.com/course/uygulamali-pentest-ve-guvenlik-uzmanligi-egitimi/', provides_skills: ['skill-red-orta-1', 'skill-red-orta-2', 'skill-red-orta-4', 'skill-red-orta-5', 'skill-red-orta-6'] },
-        'udemy-fatih-analist': { id: 'udemy-fatih-analist', title: 'Siber Güvenlik Analistliğine Giriş', url: 'https://www.udemy.com/course/sifirdan-uygulamali-siber-guvenlik-analistligine-giris/', provides_skills: ['skill-blue-temel-1', 'skill-blue-temel-4', 'skill-blue-orta-1'] },
-        'tcm-practical-ethical-hacking': { id: 'tcm-practical-ethical-hacking', title: 'TCM - Practical Ethical Hacking', url: 'https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course', provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-orta-4','skill-red-orta-5','skill-red-orta-6'] },
-        'btk-ag-temelleri': { id: 'btk-ag-temelleri', title: 'BTK - Ağ Teknolojilerine Giriş', url: 'https://www.btkakademi.gov.tr/portal/course/ag-teknolojilerine-giris-10902', provides_skills: ['skill-blue-temel-2'] },
-        'btk-linux': { id: 'btk-linux', title: 'BTK - Uçtan Uca Linux Eğitimi', url: 'https://www.btkakademi.gov.tr/portal/course/uctan-uca-linux-egitimi-2-19277', provides_skills: ['skill-blue-temel-3'] },
-        'btk-sizma-testi': { id: 'btk-sizma-testi', title: 'BTK - Sızma Testi Eğitimi', url: 'https://www.btkakademi.gov.tr/portal/course/sizma-testi-egitimi-6979', provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-orta-1','skill-red-orta-2','skill-red-orta-4'] }
-    };
-    
-    // --- YETKİNLİK KARTLARINI DİNAMİK OLUŞTURMA FONKSİYONU ---
-    function createSkillCards() {
-        const containers = {
-            'blue-temel': document.getElementById('container-blue-temel'), 'blue-orta': document.getElementById('container-blue-orta'), 'blue-uzman': document.getElementById('container-blue-uzman'),
-            'red-temel': document.getElementById('container-red-temel'), 'red-orta': document.getElementById('container-red-orta'), 'red-uzman': document.getElementById('container-red-uzman')
+            'skill-blue-temel-1': { name: 'Siber Güvenlik Temelleri', level: 'temel', points: 10, prerequisites: [] },
+            'skill-blue-temel-2': { name: 'Network Bilgisi', level: 'temel', points: 10, prerequisites: [] },
+            'skill-blue-temel-3': { name: 'İşletim Sistemi Bilgisi', level: 'temel', points: 10, prerequisites: [] },
+            'skill-blue-temel-4': { name: 'Güvenlik Araçları Farkındalığı', level: 'temel', points: 10, prerequisites: [] },
+            'skill-blue-temel-5': { name: 'Bulut Bilişim Temelleri', level: 'temel', points: 10, prerequisites: [] },
+            'skill-blue-temel-6': { name: 'Kimlik Yönetimi Kavramları', level: 'temel', points: 10, prerequisites: [] },
+            'skill-blue-orta-1': { name: 'SOC Operasyonları (Tier 1/2)', level: 'orta', points: 25, prerequisites: ['skill-blue-temel-1', 'skill-blue-temel-4'] },
+            'skill-blue-orta-2': { name: 'SIEM & Log Yönetimi', level: 'orta', points: 25, prerequisites: ['skill-blue-temel-2', 'skill-blue-temel-4'] },
+            'skill-blue-orta-3': { name: 'Ağ Trafiği Analizi', level: 'orta', points: 25, prerequisites: ['skill-blue-temel-2'] },
+            'skill-blue-orta-4': { name: 'Zafiyet Yönetimi', level: 'orta', points: 20, prerequisites: ['skill-blue-temel-1'] },
+            'skill-blue-orta-5': { name: 'Uç Nokta Güvenliği (EDR)', level: 'orta', points: 25, prerequisites: ['skill-blue-temel-3'] },
+            'skill-blue-orta-6': { name: 'Tehdit İstihbaratı (CTI)', level: 'orta', points: 20, prerequisites: ['skill-blue-temel-1'] },
+            'skill-blue-uzman-1': { name: 'Proaktif Tehdit Avcılığı', level: 'uzman', points: 50, prerequisites: ['skill-blue-orta-1', 'skill-blue-orta-3'] },
+            'skill-blue-uzman-2': { name: 'Dijital Adli Bilişim (DFIR)', level: 'uzman', points: 50, prerequisites: ['skill-blue-orta-1', 'skill-blue-temel-3'] },
+            'skill-blue-uzman-3': { name: 'Zararlı Yazılım Analizi', level: 'uzman', points: 50, prerequisites: ['skill-blue-temel-3'] },
+            'skill-blue-uzman-4': { name: 'Otomasyon (SOAR & Scripting)', level: 'uzman', points: 40, prerequisites: ['skill-red-temel-5'] },
+            'skill-blue-uzman-5': { name: 'Bulut Güvenlik Mimarisi', level: 'uzman', points: 50, prerequisites: ['skill-blue-temel-5', 'skill-blue-temel-6'] },
+            'skill-blue-uzman-6': { name: 'Yapay Zeka ve Güvenlik', level: 'uzman', points: 40, prerequisites: ['skill-blue-orta-1'] },
+            'skill-red-temel-1': { name: 'Sızma Testi Metodolojileri', level: 'temel', points: 10, prerequisites: [] },
+            'skill-red-temel-2': { name: 'Network Keşif', level: 'temel', points: 10, prerequisites: ['skill-blue-temel-2'] },
+            'skill-red-temel-3': { name: 'Ev Laboratuvarı Kurulumu', level: 'temel', points: 10, prerequisites: [] },
+            'skill-red-temel-4': { name: 'Web Teknolojileri', level: 'temel', points: 10, prerequisites: [] },
+            'skill-red-temel-5': { name: 'Betik Dili Temelleri', level: 'temel', points: 10, prerequisites: [] },
+            'skill-red-temel-6': { name: 'Sosyal Mühendislik Farkındalığı', level: 'temel', points: 10, prerequisites: [] },
+            'skill-red-orta-1': { name: 'Web Uygulama Sızma Testleri', level: 'orta', points: 30, prerequisites: ['skill-red-temel-4'] },
+            'skill-red-orta-2': { name: 'Sömürü (Exploitation)', level: 'orta', points: 25, prerequisites: ['skill-red-temel-2'] },
+            'skill-red-orta-3': { name: 'Bug Bounty Faaliyetleri', level: 'orta', points: 20, prerequisites: ['skill-red-orta-1'] },
+            'skill-red-orta-4': { name: 'Ağ İçi Sızma Testi', level: 'orta', points: 30, prerequisites: ['skill-red-temel-2', 'skill-blue-temel-3'] },
+            'skill-red-orta-5': { name: 'Active Directory (AD) Temelleri', level: 'orta', points: 25, prerequisites: ['skill-red-orta-4'] },
+            'skill-red-orta-6': { name: 'Parola Saldırıları', level: 'orta', points: 20, prerequisites: ['skill-blue-temel-3'] },
+            'skill-red-uzman-1': { name: 'Savunma Atlatma (Evasion)', level: 'uzman', points: 50, prerequisites: ['skill-red-orta-2', 'skill-red-orta-4'] },
+            'skill-red-uzman-2': { name: 'Gelişmiş AD Saldırıları', level: 'uzman', points: 50, prerequisites: ['skill-red-orta-5'] },
+            'skill-red-uzman-3': { name: 'Exploit Geliştirme', level: 'uzman', points: 60, prerequisites: ['skill-red-temel-5'] },
+            'skill-red-uzman-4': { name: 'Bulut Sızma Testleri', level: 'uzman', points: 50, prerequisites: ['skill-blue-temel-5', 'skill-red-orta-4'] },
+            'skill-red-uzman-5': { name: 'Mobil Sızma Testleri', level: 'uzman', points: 40, prerequisites: ['skill-red-orta-1'] },
+            'skill-red-uzman-6': { name: 'Donanım ve IoT Testleri', level: 'uzman', points: 40, prerequisites: [] }
         };
-
-        const cardColors = {
-            'blue-temel': 'bg-blue-50 border-blue-200', 'blue-orta': 'bg-blue-100 border-blue-300', 'blue-uzman': 'bg-blue-200 border-blue-400',
-            'red-temel': 'bg-red-50 border-red-200', 'red-orta': 'bg-red-100 border-red-300', 'red-uzman': 'bg-red-200 border-red-400'
-        };
-        
-        for (const skillId in skillsData) {
-            const skill = skillsData[skillId];
-            const [_, color, level] = skillId.split('-');
-            const containerKey = `${color}-${level}`;
-
-            if (containers[containerKey]) {
-                // Bu yetkinliği sağlayan kursları bul
-                const relatedCourses = Object.values(coursesData).filter(course => course.provides_skills.includes(skillId));
-                let coursesHTML = '';
-                if (relatedCourses.length > 0) {
-                    const courseLinks = relatedCourses.map(course => `<li><a href="${course.url}" target="_blank" class="text-sky-600 hover:underline text-xs">${course.title}</a></li>`).join('');
-                    coursesHTML = `<div class="mt-3 pt-3 border-t border-slate-300/50"><h6 class="font-bold mb-1">İlgili Kurslar</h6><ul class="list-disc list-inside space-y-1">${courseLinks}</ul></div>`;
-                }
-
-                const cardHTML = `
-                <div class="flip-card" id="${skillId}">
-                    <div class="skill-controls">
-                        <div class="skill-btn btn-add" title="Bu yetkinliğe sahibim">+</div>
-                        <div class="skill-btn btn-remove" title="Bu yetkinliği kaldır">-</div>
-                    </div>
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front ${cardColors[containerKey]}">
-                            ${skill.front}
-                        </div>
-                        <div class="flip-card-back">
-                            ${skill.back}
-                            ${coursesHTML}
-                        </div>
-                    </div>
-                </div>
-                `;
-                containers[containerKey].innerHTML += cardHTML;
-            }
-        }
-    }
 
         // --- BEYİN 2: ROL-YETKİNLİK HARİTASI (GÜNCELLENDİ) ---
         // Artık roller, başka rolleri de miras alabilir.
@@ -1677,19 +2232,92 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     const radarChartData = {
-        labels: [ 'Teorik Bilgi', 'Pratik Yetkinlik', 'Sertifikasyon', 'Portföy Kanıtı', 'Ağ & Topluluk' ],
+        labels: [
+            'Teorik Bilgi',
+            'Pratik Yetkinlik',
+            'Sertifikasyon',
+            'Portföy Kanıtı',
+            'Ağ & Topluluk'
+        ],
         datasets: [{
-            label: 'Genel Aday', data: [6, 3, 2, 2, 3], fill: true, backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgb(255, 99, 132)', pointBackgroundColor: 'rgb(255, 99, 132)', pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(255, 99, 132)'
+            label: 'Genel Aday',
+            data: [6, 3, 2, 2, 3],
+            fill: true,
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgb(255, 99, 132)',
+            pointBackgroundColor: 'rgb(255, 99, 132)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(255, 99, 132)'
         }, {
-            label: 'Sıra Dışı Aday', data: [8, 9, 8, 9, 8], fill: true, backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)', pointBackgroundColor: 'rgb(54, 162, 235)', pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff', pointHoverBorderColor: 'rgb(54, 162, 235)'
+            label: 'Sıra Dışı Aday',
+            data: [8, 9, 8, 9, 8],
+            fill: true,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgb(54, 162, 235)',
+            pointBackgroundColor: 'rgb(54, 162, 235)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(54, 162, 235)'
         }]
     };
+
     const radarCtx = document.getElementById('profileRadarChart').getContext('2d');
-    new Chart(radarCtx, { type: 'radar', data: radarChartData, options: { maintainAspectRatio: false, elements: { line: { borderWidth: 3 } }, scales: { r: { angleLines: { color: 'rgba(0, 0, 0, 0.1)' }, grid: { color: 'rgba(0, 0, 0, 0.1)' }, pointLabels: { font: { size: 12, weight: 'bold' }, color: '#334155' }, ticks: { color: '#64748b', backdropColor: 'rgba(255, 255, 255, 0.75)', stepSize: 2 }, suggestedMin: 0, suggestedMax: 10 } }, plugins: { legend: { position: 'top', }, tooltip: { callbacks: { label: function(context) { let label = context.dataset.label || ''; if (label) { label += ': '; } if (context.parsed.r !== null) { label += context.parsed.r + ' / 10'; } return label; } } } } } });
+    new Chart(radarCtx, {
+        type: 'radar',
+        data: radarChartData,
+        options: {
+            maintainAspectRatio: false,
+            elements: {
+                line: {
+                    borderWidth: 3
+                }
+            },
+            scales: {
+                r: {
+                    angleLines: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    },
+                    grid: {
+                        color: 'rgba(0, 0, 0, 0.1)'
+                    },
+                    pointLabels: {
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        },
+                        color: '#334155'
+                    },
+                    ticks: {
+                        color: '#64748b',
+                        backdropColor: 'rgba(255, 255, 255, 0.75)',
+                        stepSize: 2
+                    },
+                    suggestedMin: 0,
+                    suggestedMax: 10
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed.r !== null) {
+                                label += context.parsed.r + ' / 10';
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    });
 
     const certsData = {
         labels: ['CompTIA Security+', 'CEH', 'TSE Sızma Testi Uzmanı', 'OSCP'],

@@ -126,6 +126,10 @@
             border-style: dashed;
         }
 
+        #market-expectations .flip-card {
+            min-height: 480px; /* Kartların aynı boyda kalmasını sağlar, değeri ayarlayabilirsiniz */
+        }
+
         .skill-complete .btn-add { display: none; }
         .skill-complete .btn-remove { display: block; }
         .skill-incomplete .btn-add { display: block; }
@@ -1011,13 +1015,120 @@
             <div class="mb-10">
                 <h3 class="text-2xl font-semibold text-slate-800 border-b-2 border-slate-300 pb-2 mb-6">📘 Giriş Seviyesi Roller</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-200 flex flex-col"><h3 class="text-xl font-bold text-white bg-sky-700 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: SOC Analisti</h3><p class="text-sm text-slate-500 mb-4 pt-4">1-2 yıl deneyimli veya yeni mezun</p><div class="space-y-4"><div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>SIEM (Splunk, QRadar, Wazuh) araçlarında alarm izleme ve temel analiz.</li><li>EDR (CrowdStrike, SentinelOne) ve Antivirüs yönetimi.</li><li>Temel ağ (TCP/IP, DNS, HTTP) ve işletim sistemi (Windows, Linux) bilgisi.</li><li>Zafiyet tarama araçlarını (Nessus) kullanma ve raporları anlama.</li></ul></div><div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">CompTIA Security+, CEH, TSE Sızma Testi Uzmanı (tercihen)</p></div><div><h4 class="font-semibold text-purple-800">Mor Takım Yönelimi</h4><p class="text-sm text-slate-600">Alarmların ardındaki saldırı tekniğini (TTP) MITRE ATT&CK'te araştırarak saldırgan gibi düşünmeye başlar.</p></div></div></div>
-
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-200 flex flex-col"><h3 class="text-xl font-bold text-white bg-sky-600 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: Bilgi Güvenliği Uzman Yrd.</h3><p class="text-sm text-slate-500 mb-4 pt-4">Yeni mezun (GRC odaklı)</p><div class="space-y-4"><div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>ISO 27001 standardı ve kontrolleri hakkında temel bilgi.</li><li>KVKK ve GDPR gibi regülasyonlara aşinalık.</li><li>Temel risk değerlendirme ve varlık envanteri yönetimi bilgisi.</li><li>Politika, prosedür ve standart dokümantasyonuna yardımcı olma.</li></ul></div><div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">ISO 27001 Baş Denetçi/İç Tetkikçi, Security+, CISA (hedef)</p></div><div><h4 class="font-semibold text-slate-800">Değer Yaratan Sosyal Beceriler</h4><p class="text-sm text-slate-600">Dokümantasyon ve raporlama becerisi, süreç odaklılık, iletişim.</p></div></div></div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-200 flex flex-col"><h3 class="text-xl font-bold text-white bg-red-600 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: Junior Sızma Testi Uzmanı</h3><p class="text-sm text-slate-500 mb-4 pt-4">Yeni mezun (CTF/Portföy sahibi)</p><div class="space-y-4"><div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>Kali Linux ve temel araçlarına (Nmap, Burp Suite, Metasploit) hakimiyet.</li><li>Aktif CTF oyuncusu olmak (HTB, TryHackMe) ve çözüm raporu (write-up) yazabilmek.</li><li>Temel web ve ağ zafiyetlerini (OWASP Top 10) uygulamalı olarak bilmek.</li><li>Güçlü bir GitHub profiline sahip olmak (betikler, projeler).</li></ul></div><div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">eJPT, PNPT, Security+ (OSCP hedefiyle)</p></div><div><h4 class="font-semibold text-slate-800">Değer Yaratan Sosyal Beceriler</h4><p class="text-sm text-slate-600">Yoğun merak ve araştırma tutkusu, sebat, kutunun dışında düşünebilme.</p></div></div></div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg border border-slate-200 flex flex-col"><h3 class="text-xl font-bold text-white bg-sky-600 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: Güvenlik Ürün Uzmanı</h3><p class="text-sm text-slate-500 mb-4 pt-4">Yeni mezun / 1-2 yıl deneyimli</p><div class="space-y-4"><div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>Belirli bir ürün grubunda (örn: Firewall, WAF, EDR) uzmanlaşma isteği.</li><li>Güçlü ağ ve protokol bilgisi (troubleshooting için).</li><li>Ürün kurulumu (PoC/Deployment) ve konfigürasyon tecrübesi.</li><li>Müşteri taleplerini anlama ve çözüm üretme.</li></ul></div><div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">İlgili üreticinin sertifikaları (örn: PCNSA, NSE4), Network+, CCNA</p></div><div><h4 class="font-semibold text-slate-800">Değer Yaratan Sosyal Beceriler</h4><p class="text-sm text-slate-600">Müşteri odaklılık, sunum ve anlatım becerisi, problem çözme.</p></div></div></div>
-                </div>
+                        
+                        <div class="flip-card">
+                            <div class="flip-card-inner rounded-lg shadow-lg">
+                                <div class="flip-card-front flex flex-col bg-white border border-slate-200">
+                                    <div class="flex-grow p-6">
+                                        <h3 class="text-xl font-bold text-white bg-sky-700 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: SOC Analisti</h3>
+                                        <p class="text-sm text-slate-500 mb-4 pt-4">1-2 yıl deneyimli veya yeni mezun</p>
+                                        <div class="space-y-4">
+                                            <div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>SIEM (Splunk, QRadar, Wazuh) araçlarında alarm izleme ve temel analiz.</li><li>EDR (CrowdStrike, SentinelOne) ve Antivirüs yönetimi.</li><li>Temel ağ (TCP/IP, DNS, HTTP) ve işletim sistemi (Windows, Linux) bilgisi.</li><li>Zafiyet tarama araçlarını (Nessus) kullanma ve raporları anlama.</li></ul></div>
+                                            <div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">CompTIA Security+, CEH, TSE Sızma Testi Uzmanı (tercihen)</p></div>
+                                            <div><h4 class="font-semibold text-purple-800">Mor Takım Yönelimi</h4><p class="text-sm text-slate-600">Alarmların ardındaki saldırı tekniğini (TTP) MITRE ATT&CK'te araştırarak saldırgan gibi düşünmeye başlar.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 text-center text-xs text-slate-400 font-semibold border-t">
+                                        Detaylar için karta tıkla 👆
+                                    </div>
+                                </div>
+                                <div class="flip-card-back p-6 border border-slate-300 bg-slate-50">
+                                    <h4 class="font-bold text-slate-800 mb-2 text-center">Rolün Özeti: Siber Nöbetçi</h4>
+                                    <p class="text-xs mb-3"><strong>Ne İş Yapar?</strong> Dijital dünyanın nöbetçi kulesidir. Güvenlik sistemlerinden gelen milyonlarca sinyal arasından gerçek tehdit alarmlarını ayıklar, ilk müdahaleyi yapar ve olayı ilgili ekiplere iletir. Siber saldırıları en erken aşamada tespit etmeye çalışır.</p>
+                                    <p class="text-xs mb-4"><strong>Kimler İçin Uygun?</strong> Detaylara dikkat eden, yapboz çözmeyi seven, sabırlı ve metodik çalışabilen kişiler için idealdir. Baskı altında sakin kalabilmek ve sürekli öğrenmeye açık olmak bu rolde başarı için kritiktir.</p>
+                                    <h5 class="font-semibold text-sm text-slate-800 mb-2">Zihniyet Yakınlığı</h5>
+                                    <div class="w-full bg-slate-200 rounded-full h-4 flex text-xs font-medium text-white text-center">
+                                        <div class="bg-sky-600 h-4 flex items-center justify-center rounded-l-full" style="width: 80%" title="Savunmacı: %80">Mavi</div>
+                                        <div class="bg-red-600 h-4 flex items-center justify-center rounded-r-full" style="width: 20%" title="Saldırgan: %20">Kırmızı</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner rounded-lg shadow-lg">
+                                <div class="flip-card-front flex flex-col bg-white border border-slate-200">
+                                    <div class="flex-grow p-6">
+                                        <h3 class="text-xl font-bold text-white bg-sky-600 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: Bilgi Güvenliği Uzman Yrd.</h3>
+                                        <p class="text-sm text-slate-500 mb-4 pt-4">Yeni mezun (GRC odaklı)</p>
+                                        <div class="space-y-4">
+                                            <div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>ISO 27001 standardı ve kontrolleri hakkında temel bilgi.</li><li>KVKK ve GDPR gibi regülasyonlara aşinalık.</li><li>Temel risk değerlendirme ve varlık envanteri yönetimi bilgisi.</li><li>Politika, prosedür ve standart dokümantasyonuna yardımcı olma.</li></ul></div>
+                                            <div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">ISO 27001 Baş Denetçi/İç Tetkikçi, Security+, CISA (hedef)</p></div>
+                                            <div><h4 class="font-semibold text-slate-800">Değer Yaratan Sosyal Beceriler</h4><p class="text-sm text-slate-600">Dokümantasyon ve raporlama becerisi, süreç odaklılık, iletişim.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 text-center text-xs text-slate-400 font-semibold border-t">
+                                        Detaylar için karta tıkla 👆
+                                    </div>
+                                </div>
+                                <div class="flip-card-back p-6 border border-slate-300 bg-slate-50">
+                                    <h4 class="font-bold text-slate-800 mb-2 text-center">Rolün Özeti: Kural Koyucu</h4>
+                                    <p class="text-xs mb-3"><strong>Ne İş Yapar?</strong> Siber güvenliğin "kural koyucusu" ve "denetçisidir". Şirketin yasalara ve standartlara (KVKK, ISO 27001) uymasını sağlar. Riskleri analiz eder, politikalar yazar ve teknik ekiplerle yönetim arasında köprü görevi görür.</p>
+                                    <p class="text-xs mb-4"><strong>Kimler İçin Uygun?</strong> Süreç odaklı düşünen, dokümantasyon ve raporlama becerisi güçlü, iletişim yeteneği yüksek ve mevzuat okumayı seven kişiler için uygundur. "Neden?" sorusunu sormayı sevenler bu alanda başarılı olur.</p>
+                                    <h5 class="font-semibold text-sm text-slate-800 mb-2">Zihniyet Yakınlığı</h5>
+                                    <div class="w-full bg-slate-200 rounded-full h-4 flex text-xs font-medium text-white text-center">
+                                        <div class="bg-sky-600 h-4 flex items-center justify-center rounded-l-full" style="width: 90%" title="Savunmacı: %90">Mavi</div>
+                                        <div class="bg-red-600 h-4 flex items-center justify-center rounded-r-full" style="width: 10%" title="Saldırgan: %10">Kırmızı</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner rounded-lg shadow-lg">
+                                <div class="flip-card-front flex flex-col bg-white border border-slate-200">
+                                    <div class="flex-grow p-6">
+                                        <h3 class="text-xl font-bold text-white bg-red-600 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: Junior Sızma Testi Uzmanı</h3>
+                                        <p class="text-sm text-slate-500 mb-4 pt-4">Yeni mezun (CTF/Portföy sahibi)</p>
+                                        <div class="space-y-4">
+                                            <div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>Kali Linux ve temel araçlarına (Nmap, Burp Suite, Metasploit) hakimiyet.</li><li>Aktif CTF oyuncusu olmak (HTB, TryHackMe) ve çözüm raporu (write-up) yazabilmek.</li><li>Temel web ve ağ zafiyetlerini (OWASP Top 10) uygulamalı olarak bilmek.</li><li>Güçlü bir GitHub profiline sahip olmak (betikler, projeler).</li></ul></div>
+                                            <div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">eJPT, PNPT, Security+ (OSCP hedefiyle)</p></div>
+                                            <div><h4 class="font-semibold text-slate-800">Değer Yaratan Sosyal Beceriler</h4><p class="text-sm text-slate-600">Yoğun merak ve araştırma tutkusu, sebat, kutunun dışında düşünebilme.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 text-center text-xs text-slate-400 font-semibold border-t">
+                                        Detaylar için karta tıkla 👆
+                                    </div>
+                                </div>
+                                <div class="flip-card-back p-6 border border-slate-300 bg-slate-50">
+                                    <h4 class="font-bold text-slate-800 mb-2 text-center">Rolün Özeti: Etik Hacker</h4>
+                                    <p class="text-xs mb-3"><strong>Ne İş Yapar?</strong> "İyi niyetli hacker"dır. Şirketlerin dijital kalelerine, bir saldırganın gözüyle bakarak zafiyetleri bulup raporlar. Sistemlerin, web uygulamalarının ve ağların ne kadar güvenli olduğunu uygulamalı olarak test eder.</p>
+                                    <p class="text-xs mb-4"><strong>Kimler İçin Uygun?</strong> Doğuştan meraklı, "Bunu nasıl bozabilirim?" diye düşünen, pes etmeyen, yaratıcı ve problem çözme tutkusu olanlar için biçilmiş kaftandır. CTF'ler ve "challenge"lar en sevdiği oyun alanıdır.</p>
+                                    <h5 class="font-semibold text-sm text-slate-800 mb-2">Zihniyet Yakınlığı</h5>
+                                    <div class="w-full bg-slate-200 rounded-full h-4 flex text-xs font-medium text-white text-center">
+                                        <div class="bg-sky-600 h-4 flex items-center justify-center rounded-l-full" style="width: 10%" title="Savunmacı: %10">Mavi</div>
+                                        <div class="bg-red-600 h-4 flex items-center justify-center rounded-r-full" style="width: 90%" title="Saldırgan: %90">Kırmızı</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner rounded-lg shadow-lg">
+                                <div class="flip-card-front flex flex-col bg-white border border-slate-200">
+                                    <div class="flex-grow p-6">
+                                        <h3 class="text-xl font-bold text-white bg-sky-600 -m-6 p-4 rounded-t-lg">Giriş Seviyesi: Güvenlik Ürün Uzmanı</h3>
+                                        <p class="text-sm text-slate-500 mb-4 pt-4">Yeni mezun / 1-2 yıl deneyimli</p>
+                                        <div class="space-y-4">
+                                            <div><h4 class="font-semibold text-slate-800">Öne Çıkan Teknik Yetkinlikler</h4><ul class="mt-2 list-disc list-inside text-sm text-slate-600 space-y-1"><li>Belirli bir ürün grubunda (örn: Firewall, WAF, EDR) uzmanlaşma isteği.</li><li>Güçlü ağ ve protokol bilgisi (troubleshooting için).</li><li>Ürün kurulumu (PoC/Deployment) ve konfigürasyon tecrübesi.</li><li>Müşteri taleplerini anlama ve çözüm üretme.</li></ul></div>
+                                            <div><h4 class="font-semibold text-slate-800">İlanlarda Sıkça Aranan Sertifikalar</h4><p class="text-sm text-slate-600">İlgili üreticinin sertifikaları (örn: PCNSA, NSE4), Network+, CCNA</p></div>
+                                            <div><h4 class="font-semibold text-slate-800">Değer Yaratan Sosyal Beceriler</h4><p class="text-sm text-slate-600">Müşteri odaklılık, sunum ve anlatım becerisi, problem çözme.</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="p-4 text-center text-xs text-slate-400 font-semibold border-t">
+                                        Detaylar için karta tıkla 👆
+                                    </div>
+                                </div>
+                                <div class="flip-card-back p-6 border border-slate-300 bg-slate-50">
+                                    <h4 class="font-bold text-slate-800 mb-2 text-center">Rolün Özeti: Teknoloji Ustası</h4>
+                                    <p class="text-xs mb-3"><strong>Ne İş Yapar?</strong> Belirli bir güvenlik teknolojisinin (Firewall, EDR vb.) ustasıdır. Bu ürünlerin müşterilerde kurulumunu, yapılandırmasını ve teknik desteğini sağlar. Müşterinin ihtiyacını anlayıp doğru güvenlik çözümünü konumlandırır.</p>
+                                    <p class="text-xs mb-4"><strong>Kimler İçin Uygun?</strong> Teknik sorun giderme yeteneği güçlü, ürün odaklı, insanlarla iletişim kurmayı seven ve sunum becerisi olan kişiler için idealdir. Hem teknik derinliği hem de müşteri odaklılığı birleştirebilenler öne çıkar.</p>
+                                    <h5 class="font-semibold text-sm text-slate-800 mb-2">Zihniyet Yakınlığı</h5>
+                                    <div class="w-full bg-slate-200 rounded-full h-4 flex text-xs font-medium text-white text-center">
+                                        <div class="bg-sky-600 h-4 flex items-center justify-center rounded-l-full" style="width: 85%" title="Savunmacı: %85">Mavi</div>
+                                        <div class="bg-red-600 h-4 flex items-center justify-center rounded-r-full" style="width: 15%" title="Saldırgan: %15">Kırmızı</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
             </div>
 
             <div class="mb-10">

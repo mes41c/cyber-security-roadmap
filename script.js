@@ -61,232 +61,243 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const coursesData = {
-            // =====================================================================================
-            // === ATIL SAMANCIOĞLU KURSLARI (UDEMY PROFİLİNDEN TİTİZLİKLE DOĞRULANMIŞTIR) ==========
-            // =====================================================================================
-            'udemy-atil-python-etik-hacker': {
-                id: 'udemy-atil-python-etik-hacker',
-                title: 'Python: Sıfırdan İleri Seviyeye - Etik Hacker Örnekleriyle',
-                instructor: 'Atıl Samancıoğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/python-sifirdan-ileri-seviye-programlama-2020/',
-                level: 'Başlangıç',
-                tahmini_sure_saat: 25,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-temel-5', 'skill-blue-uzman-4']
-            },
-            'udemy-atil-etik-hacker-olma': {
-                id: 'udemy-atil-etik-hacker-olma',
-                title: 'Etik Hacker Olma Kursu',
-                instructor: 'Atıl Samancıoğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/etik-hacker-olma-kursu/',
-                level: 'Orta',
-                tahmini_sure_saat: 20,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-orta-1','skill-red-orta-2','skill-red-orta-4','skill-red-orta-5']
-            },
-            'udemy-atil-seviye2': {
-                id: 'udemy-atil-seviye2',
-                title: 'Etik Hacker Olma Kursu - Seviye 2: Ağ İçi Saldırılar',
-                instructor: 'Atıl Samancıoğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/etik-hacker-olma-kursu-seviye-2-ag-ici-saldirilar/',
-                level: 'Orta',
-                tahmini_sure_saat: 22,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-orta-4', 'skill-red-orta-5', 'skill-red-orta-6', 'skill-red-uzman-2']
-            },
-            'udemy-atil-mobil-hacker': {
-                id: 'udemy-atil-mobil-hacker',
-                title: 'Etik Hacker Olma: Mobil Uygulamalar ve Telefonlar',
-                instructor: 'Atıl Samancıoğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/etik-hacker-olma-mobil-uygulamalar-ve-telefonlar/',
-                level: 'Uzman',
-                tahmini_sure_saat: 18,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-uzman-5']
-            },
-            'udemy-atil-bug-bounty': {
-                id: 'udemy-atil-bug-bounty',
-                title: 'Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty',
-                instructor: 'Atıl Samancıoğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/etik-hacker-olmak-web-sizma-testleri-ve-bug-bounty/',
-                level: 'Orta',
-                tahmini_sure_saat: 15,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-temel-4', 'skill-red-orta-1', 'skill-red-orta-3']
-            },
-            'udemy-atil-veri-bilimi': {
-                id: 'udemy-atil-veri-bilimi',
-                title: 'Veri Bilimi ve Makina Öğrenmesi 2025: 100 Günlük Kamp',
-                instructor: 'Atıl Samancıoğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/veri-bilimi-ve-makina-ogrenmesi-2025-100-gunluk-kamp/',
-                level: 'Temel',
-                tahmini_sure_saat: 35,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-uzman-6']
-            },
+    // =====================================================================================
+    // === ATIL SAMANCIOĞLU KURSLARI (İÇERİK ANALİZİYLE YETKİNLİKLER GÜNCELLENDİ) ==========
+    // =====================================================================================
+    'udemy-atil-python-etik-hacker': {
+        id: 'udemy-atil-python-etik-hacker',
+        title: 'Python: Sıfırdan İleri Seviyeye - Etik Hacker Örnekleriyle',
+        instructor: 'Atıl Samancıoğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/python-sifirdan-ileri-seviye-programlama-2020/',
+        level: 'Başlangıç',
+        tahmini_sure_saat: 25,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Python temelleri, otomasyon ve ağ programlama yetkinlikleri netleştirildi.
+        provides_skills: ['skill-red-temel-5', 'skill-blue-uzman-4']
+    },
+    'udemy-atil-etik-hacker-olma': {
+        id: 'udemy-atil-etik-hacker-olma',
+        title: 'Etik Hacker Olma Kursu',
+        instructor: 'Atıl Samancıoğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/etik-hacker-olma-kursu/',
+        level: 'Orta',
+        tahmini_sure_saat: 20,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Kullanıcının belirttiği gibi 'Sosyal Mühendislik' eklendi.
+        provides_skills: ['skill-red-orta-1','skill-red-orta-2','skill-red-orta-4','skill-red-orta-5', 'skill-red-temel-6']
+    },
+    'udemy-atil-seviye2': {
+        id: 'udemy-atil-seviye2',
+        title: 'Etik Hacker Olma Kursu - Seviye 2: Ağ İçi Saldırılar',
+        instructor: 'Atıl Samancıoğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/etik-hacker-olma-kursu-seviye-2-ag-ici-saldirilar/',
+        level: 'Orta',
+        tahmini_sure_saat: 22,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Gelişmiş AD saldırıları ve savunma atlatma konuları eklendi.
+        provides_skills: ['skill-red-orta-4', 'skill-red-orta-5', 'skill-red-orta-6', 'skill-red-uzman-2', 'skill-red-uzman-1']
+    },
+    'udemy-atil-mobil-hacker': {
+        id: 'udemy-atil-mobil-hacker',
+        title: 'Etik Hacker Olma: Mobil Uygulamalar ve Telefonlar',
+        instructor: 'Atıl Samancıoğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/etik-hacker-olma-mobil-uygulamalar-ve-telefonlar/',
+        level: 'Uzman',
+        tahmini_sure_saat: 18,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Mobil sızma testi yetkinliği doğru şekilde eşleştirildi.
+        provides_skills: ['skill-red-uzman-5']
+    },
+    'udemy-atil-bug-bounty': {
+        id: 'udemy-atil-bug-bounty',
+        title: 'Etik Hacker Olmak: Web Sızma Testleri ve Bug Bounty',
+        instructor: 'Atıl Samancıoğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/etik-hacker-olmak-web-sizma-testleri-ve-bug-bounty/',
+        level: 'Orta',
+        tahmini_sure_saat: 15,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Web teknolojileri temeli, web sızma ve bug bounty yetkinlikleri teyit edildi.
+        provides_skills: ['skill-red-temel-4', 'skill-red-orta-1', 'skill-red-orta-3']
+    },
+    'udemy-atil-veri-bilimi': {
+        id: 'udemy-atil-veri-bilimi',
+        title: 'Veri Bilimi ve Makina Öğrenmesi 2025: 100 Günlük Kamp',
+        instructor: 'Atıl Samancıoğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/veri-bilimi-ve-makina-ogrenmesi-2025-100-gunluk-kamp/',
+        level: 'Temel',
+        tahmini_sure_saat: 35,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Güvenlikte YZ yetkinliği için temel oluşturduğu teyit edildi.
+        provides_skills: ['skill-blue-uzman-6']
+    },
 
-            // =====================================================================================
-            // === MEHMET YÜKSEL ŞEKEROĞLU KURSU (NİHAİ DOĞRU ATAMA YAPILMIŞTIR) ===================
-            // =====================================================================================
-            'udemy-mehmet-siber-guvenlik-linux': {
-                id: 'udemy-mehmet-siber-guvenlik-linux',
-                title: 'Sıfırdan Uygulamalı Siber Güvenlik, Hacking ve Linux Eğitimi',
-                instructor: 'Mehmet Yüksel Şekeroğlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/sifirdan-uygulamali-siber-guvenlik-ve-etik-hackerlik-kursu/',
-                level: 'Başlangıç',
-                tahmini_sure_saat: 30,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-temel-1','skill-blue-temel-2','skill-blue-temel-3','skill-red-temel-1','skill-red-temel-2','skill-red-temel-3']
-            },
+    // =====================================================================================
+    // === DİĞER EĞİTMENLER (İÇERİK ANALİZİYLE YETKİNLİKLER GÜNCELLENDİ) ===================
+    // =====================================================================================
+    'udemy-mehmet-siber-guvenlik-linux': {
+        id: 'udemy-mehmet-siber-guvenlik-linux',
+        title: 'Sıfırdan Uygulamalı Siber Güvenlik, Hacking ve Linux Eğitimi',
+        instructor: 'Mehmet Yüksel Şekeroğlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/sifirdan-uygulamali-siber-guvenlik-ve-etik-hackerlik-kursu/',
+        level: 'Başlangıç',
+        tahmini_sure_saat: 30,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Linux, Network ve sızma testi temellerini kapsadığı için ilgili yetkinlikler eklendi.
+        provides_skills: ['skill-blue-temel-1','skill-blue-temel-2','skill-blue-temel-3','skill-red-temel-1','skill-red-temel-2','skill-red-temel-3', 'skill-red-temel-4']
+    },
+    'udemy-levent-etik-hacker-2025': {
+        id: 'udemy-levent-etik-hacker-2025',
+        title: 'Etik Hacker Olma Kursu (Uygulamalı) | 2025',
+        instructor: 'Levent Ertunalılar',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/etik-hacker-olma-kursu-uygulamali-2023/',
+        level: 'Başlangıç',
+        tahmini_sure_saat: 50,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Geniş kapsamlı bir başlangıç kursu olduğu için birçok temel seviye yetkinlik eklendi.
+        provides_skills: ['skill-blue-temel-1','skill-blue-temel-2','skill-blue-temel-3', 'skill-red-temel-1','skill-red-temel-2','skill-red-temel-4','skill-red-orta-1','skill-red-temel-6']
+    },
+    'udemy-fatih-analist': {
+        id: 'udemy-fatih-analist',
+        title: 'Sıfırdan Uygulamalı Siber Güvenlik Analistliğine Giriş',
+        instructor: 'Fatih Ceylan',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/sifirdan-uygulamali-siber-guvenlik-analistligine-giris/',
+        level: 'Başlangıç',
+        tahmini_sure_saat: 10,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: SOC operasyonları ve analiz temellerini kapsadığı için ilgili yetkinlikler eklendi.
+        provides_skills: ['skill-blue-temel-1', 'skill-blue-temel-4', 'skill-blue-orta-1', 'skill-blue-orta-2']
+    },
+    'tcm-practical-ethical-hacking': {
+        id: 'tcm-practical-ethical-hacking',
+        title: 'Practical Ethical Hacking - The Complete Course',
+        instructor: 'Heath Adams (TCM Security)',
+        platform: 'TCM Security',
+        url: 'https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course',
+        level: 'Orta',
+        tahmini_sure_saat: 25,
+        tahmini_maliyet_usd: 30,
+        // Güncelleme: Özellikle ağ içi sızma ve AD temellerini güçlü bir şekilde kapsadığı için ilgili yetkinlikler eklendi.
+        provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-orta-4','skill-red-orta-5','skill-red-orta-6', 'skill-red-orta-2']
+    },
+    'btk-sizma-testi': {
+        id: 'btk-sizma-testi',
+        title: 'Sızma Testi Eğitimi',
+        instructor: 'BTK Akademi',
+        platform: 'BTK Akademi',
+        url: 'https://www.btkakademi.gov.tr/portal/course/sizma-testi-egitimi-6979',
+        level: 'Orta',
+        tahmini_sure_saat: 65,
+        tahmini_maliyet_usd: 0,
+        // Güncelleme: Kapsamlı içeriği gözden geçirilerek orta seviye yetkinlikler de eklendi.
+        provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-temel-4', 'skill-red-orta-1','skill-red-orta-2','skill-red-orta-4', 'skill-red-temel-5']
+    },
 
-            // =====================================================================================
-            // === TEMEL VE DESTEKLEYİCİ KURSLAR (İSTEK ÜZERİNE EKLENMİŞTİR) =======================
-            // =====================================================================================
-             'udemy-levent-web-gelistirme': {
-                id: 'udemy-levent-web-gelistirme',
-                title: 'Sıfırdan Web Geliştirme Kursu (Başlangıç)',
-                instructor: 'Levent Ertunalılar',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/sifirdan-web-gelistirme-kursu-baslangic/',
-                level: 'Temel',
-                tahmini_sure_saat: 30,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-temel-4']
-            },
-            'udemy-levent-bilgisayar-uzmanligi': {
-                id: 'udemy-levent-bilgisayar-uzmanligi',
-                title: 'Sıfırdan Bilgisayar Uzmanlığı Kursu',
-                instructor: 'Tuncay Erol',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/sfrdan-bilgisayar-uzmanlg-kursu/',
-                level: 'Temel',
-                tahmini_sure_saat: 20,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-temel-3'] // İşletim Sistemi Bilgisi yetkinliğine temel oluşturur
-            },
-            'udemy-kursat-sql': {
-                id: 'udemy-kursat-sql',
-                title: 'Uygulamalarla SQL Öğreniyorum',
-                instructor: 'Kürşat Uğurlu',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/uygulamalarla-sql-ogreniyorum-kurs/',
-                level: 'Temel',
-                tahmini_sure_saat: 10,
-                tahmini_maliyet_usd: 15,
-                provides_skills: []
-            },
-
-            // =====================================================================================
-            // === DİĞER GÜVENLİK KURSLARI (DOĞRULANMIŞTIR) =========================================
-            // =====================================================================================
-            'udemy-levent-etik-hacker-2025': {
-                id: 'udemy-levent-etik-hacker-2025',
-                title: 'Etik Hacker Olma Kursu (Uygulamalı) | 2025',
-                instructor: 'Levent Ertunalılar',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/etik-hacker-olma-kursu-uygulamali-2023/',
-                level: 'Başlangıç',
-                tahmini_sure_saat: 50,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-temel-1','skill-blue-temel-2','skill-red-temel-1','skill-red-temel-2','skill-red-temel-4','skill-red-orta-1','skill-red-temel-6']
-            },
-            'udemy-alperen-sonicwall': {
-                id: 'udemy-alperen-sonicwall',
-                title: 'Sonicwall Firewall Eğitimi',
-                instructor: 'Alperen Alptekin',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/sonicwall-firewall-egitimi/',
-                level: 'Orta',
-                tahmini_sure_saat: 5,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-temel-4', 'skill-blue-orta-2']
-            },
-             'udemy-fatih-dark-web': {
-                id: 'udemy-fatih-dark-web',
-                title: 'Dark Web: Complete Introduction to the Deep/Dark Web 2025',
-                instructor: 'Fatih Ceylan',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/dark-web-complete-introduction-to-the-deepdark-web-2023/',
-                level: 'Orta',
-                tahmini_sure_saat: 2,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-orta-6', 'skill-red-temel-6']
-            },
-            'udemy-sadik-pentest': {
-                id: 'udemy-sadik-pentest',
-                title: 'Uygulamalı Pentest ve Güvenlik Uzmanlığı Eğitimi',
-                instructor: 'Sadık Erol',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/uygulamali-pentest-ve-guvenlik-uzmanligi-egitimi/',
-                level: 'Orta',
-                tahmini_sure_saat: 40,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-red-orta-1', 'skill-red-orta-2', 'skill-red-orta-4', 'skill-red-orta-5', 'skill-red-orta-6']
-            },
-            'udemy-fatih-analist': {
-                id: 'udemy-fatih-analist',
-                title: 'Sıfırdan Uygulamalı Siber Güvenlik Analistliğine Giriş',
-                instructor: 'Fatih Ceylan',
-                platform: 'Udemy',
-                url: 'https://www.udemy.com/course/sifirdan-uygulamali-siber-guvenlik-analistligine-giris/',
-                level: 'Başlangıç',
-                tahmini_sure_saat: 10,
-                tahmini_maliyet_usd: 15,
-                provides_skills: ['skill-blue-temel-1', 'skill-blue-temel-4', 'skill-blue-orta-1']
-            },
-            'tcm-practical-ethical-hacking': {
-                id: 'tcm-practical-ethical-hacking',
-                title: 'Practical Ethical Hacking - The Complete Course',
-                instructor: 'Heath Adams (TCM Security)',
-                platform: 'TCM Security',
-                url: 'https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course',
-                level: 'Orta',
-                tahmini_sure_saat: 25,
-                tahmini_maliyet_usd: 30,
-                provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-orta-4','skill-red-orta-5','skill-red-orta-6']
-            },
-            'btk-ag-temelleri': {
-                id: 'btk-ag-temelleri',
-                title: 'Ağ Teknolojilerine Giriş',
-                instructor: 'BTK Akademi',
-                platform: 'BTK Akademi',
-                url: 'https://www.btkakademi.gov.tr/portal/course/ag-teknolojilerine-giris-10902',
-                level: 'Başlangıç',
-                tahmini_sure_saat: 10,
-                tahmini_maliyet_usd: 0,
-                provides_skills: ['skill-blue-temel-2']
-            },
-            'btk-linux': {
-                id: 'btk-linux',
-                title: 'Uçtan Uca Linux Eğitimi',
-                instructor: 'BTK Akademi',
-                platform: 'BTK Akademi',
-                url: 'https://www.btkakademi.gov.tr/portal/course/uctan-uca-linux-egitimi-2-19277',
-                level: 'Başlangıç',
-                tahmini_sure_saat: 20,
-                tahmini_maliyet_usd: 0,
-                provides_skills: ['skill-blue-temel-3']
-            },
-            'btk-sizma-testi': {
-                id: 'btk-sizma-testi',
-                title: 'Sızma Testi Eğitimi',
-                instructor: 'BTK Akademi',
-                platform: 'BTK Akademi',
-                url: 'https://www.btkakademi.gov.tr/portal/course/sizma-testi-egitimi-6979',
-                level: 'Orta',
-                tahmini_sure_saat: 65,
-                tahmini_maliyet_usd: 0,
-                provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-orta-1','skill-red-orta-2','skill-red-orta-4']
-            }
-        };
-
+    // =====================================================================================
+    // === DESTEKLEYİCİ KURSLAR (YETKİNLİK ATAMALARI GÖZDEN GEÇİRİLDİ) ========================
+    // =====================================================================================
+     'udemy-levent-web-gelistirme': {
+        id: 'udemy-levent-web-gelistirme',
+        title: 'Sıfırdan Web Geliştirme Kursu (Başlangıç)',
+        instructor: 'Levent Ertunalılar',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/sifirdan-web-gelistirme-kursu-baslangic/',
+        level: 'Temel',
+        tahmini_sure_saat: 30,
+        tahmini_maliyet_usd: 15,
+        provides_skills: ['skill-red-temel-4']
+    },
+    'udemy-levent-bilgisayar-uzmanligi': {
+        id: 'udemy-levent-bilgisayar-uzmanligi',
+        title: 'Sıfırdan Bilgisayar Uzmanlığı Kursu',
+        instructor: 'Tuncay Erol',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/sfrdan-bilgisayar-uzmanlg-kursu/',
+        level: 'Temel',
+        tahmini_sure_saat: 20,
+        tahmini_maliyet_usd: 15,
+        provides_skills: ['skill-blue-temel-3'] // İşletim Sistemi Bilgisi yetkinliğine temel oluşturur
+    },
+    'udemy-kursat-sql': {
+        id: 'udemy-kursat-sql',
+        title: 'Uygulamalarla SQL Öğreniyorum',
+        instructor: 'Kürşat Uğurlu',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/uygulamalarla-sql-ogreniyorum-kurs/',
+        level: 'Temel',
+        tahmini_sure_saat: 10,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: SQLi yetkinliği için temel oluşturur ancak doğrudan siber güvenlik yetkinliği vermez. Boş bırakmak daha doğru.
+        provides_skills: []
+    },
+    'udemy-alperen-sonicwall': {
+        id: 'udemy-alperen-sonicwall',
+        title: 'Sonicwall Firewall Eğitimi',
+        instructor: 'Alperen Alptekin',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/sonicwall-firewall-egitimi/',
+        level: 'Orta',
+        tahmini_sure_saat: 5,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: Firewall bilgisi 'Güvenlik Araçları' ve 'Ağ Trafiği Analizi' ile ilgilidir.
+        provides_skills: ['skill-blue-temel-4', 'skill-blue-orta-3']
+    },
+     'udemy-fatih-dark-web': {
+        id: 'udemy-fatih-dark-web',
+        title: 'Dark Web: Complete Introduction to the Deep/Dark Web 2025',
+        instructor: 'Fatih Ceylan',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/dark-web-complete-introduction-to-the-deepdark-web-2023/',
+        level: 'Orta',
+        tahmini_sure_saat: 2,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: CTI ve OSINT konularıyla ilişkili olduğu için 'Tehdit İstihbaratı' yetkinliği eklendi.
+        provides_skills: ['skill-blue-orta-6', 'skill-red-temel-6']
+    },
+    'udemy-sadik-pentest': {
+        id: 'udemy-sadik-pentest',
+        title: 'Uygulamalı Pentest ve Güvenlik Uzmanlığı Eğitimi',
+        instructor: 'Sadık Erol',
+        platform: 'Udemy',
+        url: 'https://www.udemy.com/course/uygulamali-pentest-ve-guvenlik-uzmanligi-egitimi/',
+        level: 'Orta',
+        tahmini_sure_saat: 40,
+        tahmini_maliyet_usd: 15,
+        // Güncelleme: İçerik analiziyle orta seviye yetkinlikler teyit edildi.
+        provides_skills: ['skill-red-orta-1', 'skill-red-orta-2', 'skill-red-orta-4', 'skill-red-orta-5', 'skill-red-orta-6']
+    },
+    'btk-ag-temelleri': {
+        id: 'btk-ag-temelleri',
+        title: 'Ağ Teknolojilerine Giriş',
+        instructor: 'BTK Akademi',
+        platform: 'BTK Akademi',
+        url: 'https://www.btkakademi.gov.tr/portal/course/ag-teknolojilerine-giris-10902',
+        level: 'Başlangıç',
+        tahmini_sure_saat: 10,
+        tahmini_maliyet_usd: 0,
+        provides_skills: ['skill-blue-temel-2']
+    },
+    'btk-linux': {
+        id: 'btk-linux',
+        title: 'Uçtan Uca Linux Eğitimi',
+        instructor: 'BTK Akademi',
+        platform: 'BTK Akademi',
+        url: 'https://www.btkakademi.gov.tr/portal/course/uctan-uca-linux-egitimi-2-19277',
+        level: 'Başlangıç',
+        tahmini_sure_saat: 20,
+        tahmini_maliyet_usd: 0,
+        provides_skills: ['skill-blue-temel-3']
+    }
+};
+    
         const COMPLETED_COURSES_KEY = 'completedCourses';
 
         // Arayüz Elementleri

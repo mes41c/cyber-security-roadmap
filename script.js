@@ -298,42 +298,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 };
 
-        const skillToCourseMap = {};
+        const skillToCoursesMap = {};
     for (const courseId in coursesData) {
         const course = coursesData[courseId];
         if (course.provides_skills) {
             course.provides_skills.forEach(skillId => {
-                // Eğer bir yetkinlik birden fazla kurs tarafından veriliyorsa,
-                // haritaya sadece bulunan ilk kursu ekliyoruz.
-                if (!skillToCourseMap[skillId]) {
-                    skillToCourseMap[skillId] = course.title;
+                // Eğer bu yetkinlik için haritada henüz bir giriş yoksa, boş bir dizi oluştur.
+                if (!skillToCoursesMap[skillId]) {
+                    skillToCoursesMap[skillId] = [];
                 }
+                // Kurs objesini (sadece adını değil, tüm bilgilerini) diziye ekle.
+                skillToCoursesMap[skillId].push(course);
             });
         }
     }
 
     // 2. Adım: Sayfadaki tüm yetkinlik kartlarını (flip-card) bulun.
-    // Her bir kartın ID'sini kullanarak, az önce oluşturduğumuz haritadan ilgili kurs adını alın
-    // ve kartın ön yüzüne (flip-card-front) bu bilgiyi ekleyen yeni bir HTML elementi oluşturun.
+    // Kartın arka yüzünü hedefleyerek, ilgili tüm kursları bir liste formatında ekleyin.
     document.querySelectorAll('.flip-card').forEach(card => {
         const skillId = card.id;
-        const courseName = skillToCourseMap[skillId];
+        const courses = skillToCoursesMap[skillId];
 
-        // Eğer bu yetkinlik için bir kurs bulunduysa...
-        if (courseName) {
-            const cardFront = card.querySelector('.flip-card-front');
-            if (cardFront) {
-                // Kurs adını gösterecek yeni bir 'div' elementi oluşturun.
-                const courseElement = document.createElement('div');
+        // Eğer bu yetkinlik için bir veya daha fazla kurs bulunduysa...
+        if (courses && courses.length > 0) {
+            const cardBack = card.querySelector('.flip-card-back');
+            if (cardBack) {
+                // Kurslar için genel bir kapsayıcı div oluşturun.
+                const coursesContainer = document.createElement('div');
+                coursesContainer.className = 'related-courses-container';
+
+                // Kurs listesini tutacak bir başlık ve ul elementi oluşturun.
+                let coursesHTML = '<h6 class="font-bold text-slate-700 mb-2 mt-3 border-t pt-2">İlgili Kurslar</h6><ul class="space-y-1">';
+
+                // Her bir kursu liste elemanı (li) olarak ekleyin ve Udemy linkini verin.
+                courses.forEach(course => {
+                    coursesHTML += `
+                        <li class="text-xs">
+                            <a href="${course.url}" target="_blank" class="text-sky-700 hover:underline">
+                                ${course.title}
+                            </a>
+                        </li>
+                    `;
+                });
+
+                coursesHTML += '</ul>';
+                coursesContainer.innerHTML = coursesHTML;
                 
-                // Stil vermek için bir sınıf atayın.
-                courseElement.className = 'skill-course-info'; 
-                
-                // Elementin içeriğini oluşturun.
-                courseElement.innerHTML = `<span class="font-semibold">Önerilen Kurs:</span> ${courseName}`;
-                
-                // Oluşturulan elementi kartın ön yüzüne ekleyin.
-                cardFront.appendChild(courseElement);
+                // Oluşturulan listeyi kartın arka yüzünün en sonuna ekleyin.
+                cardBack.appendChild(coursesContainer);
             }
         }
     });

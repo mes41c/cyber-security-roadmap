@@ -64,16 +64,19 @@ body { font-family: 'Inter', sans-serif; }
             overflow-y: auto; /* İçerik taşarsa kaydırma çubuğu */
         }
 
-        .skill-course-info {
-            margin-top: 12px; /* mt-3 */
-            padding: 8px; /* p-2 */
-            font-size: 0.75rem; /* text-xs */
-            color: #1e40af; /* blue-800 */
-            background-color: #dbeafe; /* blue-100 */
-            border-radius: 0.375rem; /* rounded-md */
-            border: 1px solid #bfdbfe; /* blue-200 */
-            text-align: left;
-            line-height: 1.4;
+        .related-courses-container {
+            margin-top: auto; /* Konteyneri kartın en altına iter */
+            padding-top: 8px; /* Üstten boşluk */
+            font-size: 0.875rem; /* text-sm */
+        }
+
+        .related-courses-container h6 {
+            border-top: 1px solid #e2e8f0; /* slate-200 */
+        }
+
+        .related-courses-container ul {
+            list-style-type: disc;
+            padding-left: 1.25rem; /* pl-5 */
         }
 
         /* Yetkinlik Tamamlama Butonları */

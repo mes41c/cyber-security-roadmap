@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tahmini_sure_saat: 20,
         tahmini_maliyet_usd: 15,
         // Güncelleme: Kullanıcının belirttiği gibi 'Sosyal Mühendislik' eklendi.
-        provides_skills: ['skill-red-orta-1','skill-red-orta-2','skill-red-orta-4','skill-red-orta-5', 'skill-red-temel-6']
+        provides_skills: ['skill-red-orta-1','skill-red-orta-2','skill-red-orta-4','skill-red-orta-5', 'skill-red-temel-6', 'skill-red-temel-1', 'skill-red-temel-4']
     },
     'udemy-atil-seviye2': {
         id: 'udemy-atil-seviye2',
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tahmini_sure_saat: 65,
         tahmini_maliyet_usd: 0,
         // Güncelleme: Kapsamlı içeriği gözden geçirilerek orta seviye yetkinlikler de eklendi.
-        provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-temel-4', 'skill-red-orta-1','skill-red-orta-2','skill-red-orta-4', 'skill-red-temel-5']
+        provides_skills: ['skill-red-temel-1','skill-red-temel-2','skill-red-temel-4', 'skill-red-orta-1','skill-red-orta-2','skill-red-orta-4', 'skill-red-temel-5', 'skill-blue-temel-3', 'skill-red-orta-6']
     },
 
     // =====================================================================================

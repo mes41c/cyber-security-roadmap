@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tahmini_maliyet_usd: 15,
         provides_skills: ['skill-red-temel-4']
     },
-    'udemy-levent-bilgisayar-uzmanligi': {
-        id: 'udemy-levent-bilgisayar-uzmanligi',
+    'udemy-tuncay-bilgisayar-uzmanligi': {
+        id: 'udemy-tuncay-bilgisayar-uzmanligi',
         title: 'Sıfırdan Bilgisayar Uzmanlığı Kursu',
         instructor: 'Tuncay Erol',
         platform: 'Udemy',
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tahmini_sure_saat: 10,
         tahmini_maliyet_usd: 15,
         // Güncelleme: SQLi yetkinliği için temel oluşturur ancak doğrudan siber güvenlik yetkinliği vermez. Boş bırakmak daha doğru.
-        provides_skills: []
+        provides_skills: ['skill-red-orta-1']
     },
     'udemy-alperen-sonicwall': {
         id: 'udemy-alperen-sonicwall',

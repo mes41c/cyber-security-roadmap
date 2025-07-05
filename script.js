@@ -297,6 +297,46 @@ document.addEventListener('DOMContentLoaded', () => {
         provides_skills: ['skill-blue-temel-3']
     }
 };
+
+        const skillToCourseMap = {};
+    for (const courseId in coursesData) {
+        const course = coursesData[courseId];
+        if (course.provides_skills) {
+            course.provides_skills.forEach(skillId => {
+                // Eğer bir yetkinlik birden fazla kurs tarafından veriliyorsa,
+                // haritaya sadece bulunan ilk kursu ekliyoruz.
+                if (!skillToCourseMap[skillId]) {
+                    skillToCourseMap[skillId] = course.title;
+                }
+            });
+        }
+    }
+
+    // 2. Adım: Sayfadaki tüm yetkinlik kartlarını (flip-card) bulun.
+    // Her bir kartın ID'sini kullanarak, az önce oluşturduğumuz haritadan ilgili kurs adını alın
+    // ve kartın ön yüzüne (flip-card-front) bu bilgiyi ekleyen yeni bir HTML elementi oluşturun.
+    document.querySelectorAll('.flip-card').forEach(card => {
+        const skillId = card.id;
+        const courseName = skillToCourseMap[skillId];
+
+        // Eğer bu yetkinlik için bir kurs bulunduysa...
+        if (courseName) {
+            const cardFront = card.querySelector('.flip-card-front');
+            if (cardFront) {
+                // Kurs adını gösterecek yeni bir 'div' elementi oluşturun.
+                const courseElement = document.createElement('div');
+                
+                // Stil vermek için bir sınıf atayın.
+                courseElement.className = 'skill-course-info'; 
+                
+                // Elementin içeriğini oluşturun.
+                courseElement.innerHTML = `<span class="font-semibold">Önerilen Kurs:</span> ${courseName}`;
+                
+                // Oluşturulan elementi kartın ön yüzüne ekleyin.
+                cardFront.appendChild(courseElement);
+            }
+        }
+    });
     
         const COMPLETED_COURSES_KEY = 'completedCourses';
 
